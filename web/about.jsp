@@ -110,7 +110,7 @@
         <div class="item">
           <img src="images/Sunset Meditation Music.jpeg" class="card-img-top" alt="...">
 		  <br><h1 class="slide-head"><b>Relaxation And Tranquillity</b></h1>
-          <a href="tranquil.html"><button class="button" >see more</button></a>
+          <a href="tranquil.jsp"><button class="button" >see more</button></a>
           </div>
         <div class="item">
           <img src="images/леса,луга и поля.jpeg" class="card-img-top" alt="First Image">
