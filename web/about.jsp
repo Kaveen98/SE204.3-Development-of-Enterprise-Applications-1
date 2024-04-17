@@ -115,32 +115,32 @@
         <div class="item">
           <img src="images/леса,луга и поля.jpeg" class="card-img-top" alt="First Image">
           <br><h1  class="slide-head">Love And Passion</h1>
-          <a href="romantic.html"><button class="button" >see more</button></a>
+          <a href="romantic.jsp"><button class="button" >see more</button></a>
           </div>
        <div class="item">
-          <img src="images/What Is Clairsentience_ 16 Signs That You're Clairsentient + How To Practice (1).jpeg" class="card-img-top" alt="...">
+          <img src="images/16 Signs That You_re Clairsentient.jpeg" class="card-img-top" alt="...">
           <br><h1 class="slide-head">Calm And Clarity</h1>
-          <a href="soothing.html"><button class="button" >see more</button></a>
+          <a href="soothing.jsp"><button class="button" >see more</button></a>
           </div>
        <div class="item">
           <img src="images/9e325a71-c7be-4b36-9425-c908b0ce15a9.jpeg" class="card-img-top" alt="...">
           <br><h1 class="slide-head">Positive And Joy</h1>
-          <a href="euphoric.html"><button class="button" >see more</button></a>
+          <a href="euphoric.jsp"><button class="button" >see more</button></a>
           </div>
         <div class="item">
           <img src="images/views🌿.jpeg" class="card-img-top" alt="...">
 		  <br><h1 class="slide-head">Connection To Nature</h1>
-          <a href="enchanted.html"><button class="button" >see more</button></a>
+          <a href="enchanted.jsp"><button class="button" >see more</button></a>
           </div>
         <div class="item">
           <img src="images/Holmes Quote_ Imagination.jpeg" class="card-img-top" alt="...">
           <br><h1 class="slide-head">Imagination</h1>
-          <a href="moonlight.html"><button class="button" >see more</button></a>
+          <a href="moonlight.jsp"><button class="button" >see more</button></a>
           </div>
 		<div class="item">
           <img src="images/Conceito de bem-estar com a mulher no salão de massagem _ Foto Premium.jpeg" class="card-img-top" alt="...">
           <br><h1 class="slide-head">Balance And Inner Peace</h1>
-          <a href="divine.html"><button class="button" >see more</button></a>
+          <a href="divine.jsp"><button class="button" >see more</button></a>
           </div>
       <button id="next">></button>
       <button id="prev"><</button> 
