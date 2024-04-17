@@ -118,7 +118,7 @@
           <a href="romantic.jsp"><button class="button" >see more</button></a>
           </div>
        <div class="item">
-          <img src="images/What Is Clairsentience_ 16 Signs That You're Clairsentient + How To Practice (1).jpeg" class="card-img-top" alt="...">
+          <img src="images/16 Signs That You_re Clairsentient.jpeg" class="card-img-top" alt="...">
           <br><h1 class="slide-head">Calm And Clarity</h1>
           <a href="soothing.jsp"><button class="button" >see more</button></a>
           </div>
