@@ -1,9 +1,4 @@
 
-
-
-
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -107,19 +102,25 @@
     <br>
 <body>
     <div class="center">
-        <h2><strong>Signup Form</strong></h2>
+        <h2><strong>Sign-up Form</strong></h2>
     </div>
-    <form action="/submit_signup" method="post">
-        <label for="username">Username:</label><br>
+    <form action="/submit_signup" method="post" border="1">
+        <label for="username">Username: </label>
         <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="contactno">Contact No. : </label>
+        <input type="text" id="contactno" name="contactno" required><br><br>
+        
+        <label for="address">Address : </label>
+        <input type="text" id="address" name="address" required><br><br>
 
-        <label for="email">Email:</label><br>
+        <label for="email">Email: </label>
         <input type="email" id="email" name="email" required><br><br>
 
-        <label for="password">Password:</label><br>
+        <label for="password">Password: </label>
         <input type="password" id="password" name="password" required><br><br>
 
-        <label for="confirm_password">Confirm Password:</label><br>
+        <label for="confirm_password">Confirm Password: </label>
         <input type="password" id="confirm_password" name="confirm_password" required><br><br>
 
         <input type="submit" value="Signup">
