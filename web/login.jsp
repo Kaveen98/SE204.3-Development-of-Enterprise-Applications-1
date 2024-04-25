@@ -103,16 +103,22 @@
                 <tbody>
                     <tr>
                         <td>Username</td>
-                        <td><input type="text" name="un" value="" /></td>
+                        <td colspan="2"><input type="text" name="un" value="" /></td>
                     </tr>
                     <tr>
                         <td>Password</td>
-                        <td><input type="password" name="pw" value="" /></td>
+                        <td colspan="2"><input type="password" name="pw" value="" /></td>
+                    </tr>
+                      <tr>
+                          <td><input type="submit" value="Login" /></td>
+                          <td><input type="reset" value="Cancel" /></td>
                     </tr>
                 </tbody>
-            </table>
-
+            </table> <br> 
         </form>
+              <h1 class="" align="center">ELEVATE YOUR <b>SPACE</b>, ENHANCE YOUR <b>MOOD</b>, AND EMBRACE <b>PURE BLISS...</b></h1>
+    
+           
 	<br>
 	<br>
 	<footer class="text-center" style="padding-top: 3px;">
