@@ -5,8 +5,16 @@
  */
 package Admin;
 
+import java.sql.*;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -74,10 +82,70 @@ public class AdminServlet extends HttpServlet {
         String uname = request.getParameter("uname");
         String pwd = request.getParameter("pwd");
         
+        response.setContentType("text/html");
         
+        PrintWriter out = response.getWriter();
         
+        Connection conn = null;
+        Statement stmt = null;
+        ResultSet rs = null;
         
+        try {
+            // Establishing connection to the database
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/eco_village_db", "root", "");
+            
+            // Checking if the connection is successful
+            if (conn != null) {
+                // Creating SQL query
+                String sql = "SELECT * FROM guest";
+                
+                // Creating a Statement object to execute the query
+                stmt = conn.createStatement();
+                
+                // Executing the query
+                rs = stmt.executeQuery(sql);
+                
+                // Displaying results
+                out.println("<html><head><title>Guest List</title></head><body>");
+                out.println("<center>");
+                out.println("<table border=\"0\">");
+                out.println("<tr>");
+                out.println("<th width=\"100\">Guest_ID</th>");
+                out.println("<th width=\"100\">First Name</th>");
+                out.println("<th width=\"100\">Last Name</th>");
+                out.println("<th width=\"100\">Address</th>");
+                out.println("</tr>");
+                
+                // Iterating through the result set and printing data
+                while (rs.next()) {
+                    out.println("<tr>");
+                    out.println("<td>" + rs.getString("room_type") + "</td>");
+                    out.println("<td>" + rs.getString("room_id") + "</td>");
+                    out.println("<td>" + rs.getString("guest_id") + "</td>");
+                    out.println("<td>" + rs.getString("first_name") + "</td>");
+                    out.println("<td>" + rs.getString("last_name") + "</td>");
+                    out.println("<td>" + rs.getString("address") + "</td>");
+                    out.println("</tr>");
+                }
+                
+                out.println("</table>");
+                out.println("</center>");
+                out.println("</body></html>");
+            } else {
+                out.println("Failed to make connection!");
+            }
+        } catch (SQLException e) {
+        } finally {
+            // Closing resources
+            try {
+                if (rs != null) rs.close();
+                if (stmt != null) stmt.close();
+                if (conn != null) conn.close();
+            } catch (SQLException e) {
+            }
+        }
     }
+}
 
     /**
      * Returns a short description of the servlet.
