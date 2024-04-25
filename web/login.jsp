@@ -109,7 +109,7 @@
                     </tr>
                       <tr>
                           <td><input type="submit" value="Login" /></td>
-                          <td><input type="reset" value="Cancel" /></td>
+                          <td><input type="reset" value="Clear" /></td>
                     </tr>
                 </tbody>
             </table> <br> 
