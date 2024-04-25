@@ -94,9 +94,7 @@
 	<h1 class="text-center"></h1>
 	<h1 class="pop-icon"  align="center">“WELCOME TO ARCANA CANDLES WHERE INSPIRATION MEETS ILLUMINATION”</h1>
 	<p>&nbsp;</p>
-	<br>
-       
-	<br>
+	
         <form>
             <table>
                
