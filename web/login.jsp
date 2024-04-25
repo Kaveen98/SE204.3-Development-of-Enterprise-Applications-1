@@ -95,16 +95,15 @@
 	<h1 class="pop-icon"  align="center">“WELCOME TO ARCANA CANDLES WHERE INSPIRATION MEETS ILLUMINATION”</h1>
 	<p>&nbsp;</p>
 	
-        <form>
+        <form action="" method="post" name="log1">
             <table>
-               
                 <tbody>
                     <tr>
-                        <td>Username</td>
+                        <td>Username: </td>
                         <td colspan="2"><input type="text" name="un" value="" size="30"/></td>
                     </tr>
                     <tr>
-                        <td>Password</td>
+                        <td>Password: </td>
                         <td colspan="2"><input type="password" name="pw" value="" size="32"/></td>
                     </tr>
                       <tr>
@@ -116,7 +115,7 @@
         </form>
               <h1 class="" align="center">ELEVATE YOUR <b>SPACE</b>, ENHANCE YOUR <b>MOOD</b>, AND EMBRACE <b>PURE BLISS...</b></h1>
     
-              <form>
+              <form action="SignupServlet" method="post" name="signup">
                   <h4 align="center">Join with us</h4>
                   <center>  <input type="submit" value="SignUp" /> </center>
               </form>

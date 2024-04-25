@@ -78,9 +78,6 @@ public class AdminServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //processRequest(request, response);
-        String uname = request.getParameter("uname");
-        String pwd = request.getParameter("pwd");
         
         response.setContentType("text/html");
         
@@ -92,12 +89,12 @@ public class AdminServlet extends HttpServlet {
         
         try {
             // Establishing connection to the database
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/eco_village_db", "root", "");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/", "root", "");
             
             // Checking if the connection is successful
             if (conn != null) {
                 // Creating SQL query
-                String sql = "SELECT * FROM guest";
+                String sql = "SELECT * FROM cart";
                 
                 // Creating a Statement object to execute the query
                 stmt = conn.createStatement();
@@ -106,25 +103,25 @@ public class AdminServlet extends HttpServlet {
                 rs = stmt.executeQuery(sql);
                 
                 // Displaying results
-                out.println("<html><head><title>Guest List</title></head><body>");
+                out.println("<html><head><title>Orders</title></head><body>");
                 out.println("<center>");
                 out.println("<table border=\"0\">");
                 out.println("<tr>");
-                out.println("<th width=\"100\">Guest_ID</th>");
-                out.println("<th width=\"100\">First Name</th>");
-                out.println("<th width=\"100\">Last Name</th>");
-                out.println("<th width=\"100\">Address</th>");
+                out.println("<th width=\"10\">Order_ID</th>");
+                out.println("<th width=\"10\">User_ID</th>");
+                out.println("<th width=\"10\">Product_ID</th>");
+                out.println("<th width=\"10\">Quantity</th>");
+                out.println("<th width=\"10\">Quantity</th>");
                 out.println("</tr>");
                 
                 // Iterating through the result set and printing data
                 while (rs.next()) {
                     out.println("<tr>");
-                    out.println("<td>" + rs.getString("room_type") + "</td>");
-                    out.println("<td>" + rs.getString("room_id") + "</td>");
-                    out.println("<td>" + rs.getString("guest_id") + "</td>");
-                    out.println("<td>" + rs.getString("first_name") + "</td>");
-                    out.println("<td>" + rs.getString("last_name") + "</td>");
-                    out.println("<td>" + rs.getString("address") + "</td>");
+                    out.println("<td>" + rs.getString("order_id") + "</td>");
+                    out.println("<td>" + rs.getString("user_id") + "</td>");
+                    out.println("<td>" + rs.getString("product_id") + "</td>");
+                    out.println("<td>" + rs.getString("quantity") + "</td>");
+                    out.println("<td>" + rs.getString("amount") + "</td>");
                     out.println("</tr>");
                 }
                 
