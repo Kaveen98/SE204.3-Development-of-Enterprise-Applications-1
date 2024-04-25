@@ -22,93 +22,95 @@
 <div class="container-fluid">
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#"><img src="images/Untitled design (1) (1).png" class="card-img-top" alt="..." width="35px" height="35px"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span 	class="navbar-toggler-icon"></span> </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span   class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent1">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"> <a class="nav-link card-img-top" href="index.jsp">Home <span class="sr-only">(current)</span></a> </li>
-		  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle card-img-top" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Products&nbsp; </a>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle card-img-top" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Products&nbsp; </a>
             <div class="dropdown-menu " aria-labelledby="navbarDropdown1"> 
-				<a class="dropdown-item card-img-top" href="tranquil.jsp">Tranquil oasis</a> 
-				<a class="dropdown-item card-img-top" href="romantic.jsp">Romantic glow</a>
-				<a class="dropdown-item card-img-top" href="soothing.jsp">Soothing Serenity</a>
-				<a class="dropdown-item card-img-top" href="euphoric.jsp">Euphoric Bliss</a>
-				<a class="dropdown-item card-img-top" href="enchanted.jsp">Enchanted Forest</a>
-				<a class="dropdown-item card-img-top" href="moonlight.jsp">Mystical Moonlight</a>
-			  <a class="dropdown-item card-img-top" href="divine.jsp">Divine Harmony</a>
+        <a class="dropdown-item card-img-top" href="tranquil.jsp">Tranquil oasis</a> 
+        <a class="dropdown-item card-img-top" href="romantic.jsp">Romantic glow</a>
+        <a class="dropdown-item card-img-top" href="soothing.jsp">Soothing Serenity</a>
+        <a class="dropdown-item card-img-top" href="euphoric.jsp">Euphoric Bliss</a>
+        <a class="dropdown-item card-img-top" href="enchanted.jsp">Enchanted Forest</a>
+        <a class="dropdown-item card-img-top" href="moonlight.jsp">Mystical Moonlight</a>
+        <a class="dropdown-item card-img-top" href="divine.jsp">Divine Harmony</a>
               </div>
           </li>
           <li class="nav-item"> <a class="nav-link card-img-top" href="about.jsp">About Us&nbsp;</a> </li>
-		  <li class="nav-item"> <a class="nav-link card-img-top" href="service.jsp">Service&nbsp;</a> </li>
-		  <li class="nav-item"> <a class="nav-link card-img-top" href="contact.jsp">Contact Us</a> </li>
+      <li class="nav-item"> <a class="nav-link card-img-top" href="service.jsp">Service&nbsp;</a> </li>
+      <li class="nav-item"> <a class="nav-link card-img-top" href="contact.jsp">Contact Us</a> </li>
         </ul>
       </div>
     </nav>
     
-	<br>
-	<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent">
-	  <ol class="carousel-indicators">
-	    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-	    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-	    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-		<li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
-	    <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
-		<li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
-	    <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
+  <br>
+  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
+      <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
       </ol>
-	  <div class="carousel-inner" role="listbox">
-	    <div class="carousel-item active"> <img class="d-block mx-auto" src="images/1.svg" alt="First slide">
-	      <div class="carousel-caption">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active"> <img class="d-block mx-auto" src="images/1.svg" alt="First slide">
+        <div class="carousel-caption">
           </div>
         </div>
-		  <div class="carousel-item"> <img class="d-block mx-auto" src="images/6.svg" alt="Second slide">
-	      <div class="carousel-caption">
+      <div class="carousel-item"> <img class="d-block mx-auto" src="images/6.svg" alt="Second slide">
+        <div class="carousel-caption">
           </div>
         </div>
-	    <div class="carousel-item"> <img class="d-block mx-auto" src="images/2.svg" alt="Second slide">
-	      <div class="carousel-caption">
+      <div class="carousel-item"> <img class="d-block mx-auto" src="images/2.svg" alt="Second slide">
+        <div class="carousel-caption">
           </div>
         </div>
-	    <div class="carousel-item"> <img class="d-block mx-auto" src="images/4.svg" alt="Third slide">
-	      <div class="carousel-caption">
-          </div>	
+<div class="carousel-item"> <img class="d-block mx-auto" src="images/4.svg" alt="Third slide">
+        <div class="carousel-caption">
+          </div>  
         </div>
 
-		  <div class="carousel-item"> <img class="d-block mx-auto" src="images/3.svg" alt="Second slide">
-	      <div class="carousel-caption">
+      <div class="carousel-item"> <img class="d-block mx-auto" src="images/3.svg" alt="Second slide">
+        <div class="carousel-caption">
           </div>
         </div>
-		  <div class="carousel-item"> <img class="d-block mx-auto" src="images/7.svg" alt="Second slide">
-	      <div class="carousel-caption">
+      <div class="carousel-item"> <img class="d-block mx-auto" src="images/7.svg" alt="Second slide">
+        <div class="carousel-caption">
           </div>
         </div>
-		  <div class="carousel-item"> <img class="d-block mx-auto" src="images/5.svg" alt="Second slide">
-	      <div class="carousel-caption">
+      <div class="carousel-item"> <img class="d-block mx-auto" src="images/5.svg" alt="Second slide">
+        <div class="carousel-caption">
           </div>
         </div>
       </div>
-	  <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-<p>&nbsp;</p>
-	<br>
-	<br>
-	<h1 class="text-center"></h1>
-	<h1 class="pop-icon"  align="center">“WELCOME TO ARCANA CANDLES WHERE INSPIRATION MEETS ILLUMINATION”</h1>
-	<p>&nbsp;</p>
-	<br>
-	<br>
-	<h1 style="font-size: 30px;"><span class="topic">Chose Your Emotion</span>
-	  <hr class="line"></h1>
-	<br>
-	<br>
-	<h1 class=""  align="center">ELEVATE YOUR <b>SPACE</b>, ENHANCE YOUR <b>MOOD</b>, AND EMBRACE <b>PURE BLISS...</b></h1>
-	<br>
-	<br>
-	<br>
-	<br>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+
+    <p>&nbsp;</p>
+  <br>
+  
+  <br>
+  <h1 class="text-center"></h1>
+  <h1 class="pop-icon"  align="center">“WELCOME TO ARCANA CANDLES WHERE INSPIRATION MEETS ILLUMINATION”</h1>
+  <p>&nbsp;</p>
+  <br>
+  <br>
+  <h1 style="font-size: 30px;"><span class="topic">Chose Your Emotion</span>
+    <hr class="line"></h1>
+  <br>
+  <br>
+  <h1 class=""  align="center">ELEVATE YOUR <b>SPACE</b>, ENHANCE YOUR <b>MOOD</b>, AND EMBRACE <b>PURE BLISS...</b></h1>
+  <br>
+  <br>
+  <br>
+  <br>
 <div class="product">
-	    <div class="slider">
+      <div class="slider">
         <div class="item">
           <img src="images/Sunset Meditation Music.jpeg" class="card-img-top" alt="...">
-		  <br><h1 class="slide-head"><b>Relaxation And Tranquillity</b></h1>
+      <br><h1 class="slide-head"><b>Relaxation And Tranquillity</b></h1>
           <a href="tranquil.jsp"><button class="button" >see more</button></a>
           </div>
         <div class="item">
@@ -128,7 +130,7 @@
           </div>
         <div class="item">
           <img src="images/views🌿.jpeg" class="card-img-top" alt="...">
-		  <br><h1 class="slide-head">Connection To Nature</h1>
+      <br><h1 class="slide-head">Connection To Nature</h1>
           <a href="enchanted.jsp"><button class="button" >see more</button></a>
           </div>
         <div class="item">
@@ -136,7 +138,7 @@
           <br><h1 class="slide-head">Imagination</h1>
           <a href="moonlight.jsp"><button class="button" >see more</button></a>
           </div>
-		<div class="item">
+    <div class="item">
           <img src="images/Conceito de bem-estar com a mulher no salão de massagem _ Foto Premium.jpeg" class="card-img-top" alt="...">
           <br><h1 class="slide-head">Balance And Inner Peace</h1>
           <a href="divine.jsp"><button class="button" >see more</button></a>
@@ -145,36 +147,69 @@
       <button id="prev"><</button> 
           
       </div>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div id="accordion1" role="tablist">
-	  <div class="card">
-	    <div class="card-header" role="tab" id="headingOne1">
-	      <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1">OUR STORY</a> </h5>
+  </div>
+  <br>
+  <br>
+  <br>
+<div class="container" style="background-color:antiquewhite ;">
+   <div class="row">
+    <div class="col">
+ <h2>Our Service</h2><hr>
+ <p align="justify">Welcome to Arcana Candles, where we believe in the transformative power of candlelight to elevate your everyday experiences.</p>
+<p align="justify">Dive deeper into holistic wellness with our comprehensive Ayurveda product and service page! We go beyond just selling products - we empower you on your journey to inner balance. Explore the ancient wisdom of Ayurveda on our service page, where we explain how natural solutions can address your unique needs. Discover our curated line of Ayurvedic products, each featuring detailed descriptions, key ingredients, and potential benefits.  Whether your goal is stress relief, immunity support, or a radiant glow, we have something for you.  Interactive elements like quizzes and consultations with Ayurvedic specialists help you find the perfect product for a personalized approach. Flexible service packages and potential free consultations make Ayurveda accessible. We tailor our offerings to your unique wellness goals, guiding you towards a path of inner harmony with Ayurveda's ancient wisdom.</p>
+ <p>Welcome to Arcana Candles - where inspiration meets illumination.</p>
+   </div>
+   <div class="col">
+    <div class="image">
+        <img src="images/babe72751524339bc93234d440a6deba.jpg">
+      </div>
+   </div>
+  </div>
+ </div>
+ 
+ <div class="container" style="background-color:azure ;">
+   <div class="row">
+ <div class="col">
+    <div class="image">
+        <img src="images/0608d2e850cd7cd509394d42efe87897.jpg">
+      </div>
+ </div>
+    <div class="col">
+ <h2>Our Service</h2><hr>
+ <p align="justify">At Arcana Candles, we understand the importance of finding moments of peace and serenity amidst life's chaos. That's why we specialize in crafting candles specifically designed to promote emotional well-being. Through our carefully curated blends and meditation practices, we aim to help our customers cultivate a sense of calm and tranquility in their everyday lives.</p>
+
+ <p align="justify">What sets us apart is our unwavering commitment to promoting emotional well-being through candle rituals. As the only candle brand in Sri Lanka that prioritizes this aspect, we take pride in offering a holistic approach to self-care that goes beyond just scent and ambiance.</p>
+   
+	  </div>
+  
+  </div>
+ </div>
+  <br>
+  <br>
+  <br>
+  <div id="accordion1" role="tablist">
+    <div class="card">
+      <div class="card-header" role="tab" id="headingOne1">
+        <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1">OUR STORY</a> </h5>
         </div>
-	    <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
-	      <div class="card-body">Welcome to Arcana Candles, where we believe in the transformative power of candlelight to elevate your everyday experiences.<p>&nbsp;</p>Our scented candles are crafted to match your unique emotions and vibes, offering a one-of-a-kind sensory journey tailored just for you.<p>&nbsp;</p>At Arcana, we're dedicated to promoting emotional well-being and mindfulness through our candle rituals and meditation practices, helping you find moments of peace and serenity in your daily life.<p>&nbsp;</p>With a calm and reassuring voice, we aim to inspire you with uplifting messages and stories that celebrate moments of transformation and connection.<p>&nbsp;</p>Let us guide you on a journey of self-discovery and inner harmony, where each flicker of the flame illuminates a path to greater well-being.<p>&nbsp;</p>Welcome to Arcana Candles – where inspiration meets illumination.</div>
+<div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
+        <div class="card-body">Welcome to Arcana Candles, where we believe in the transformative power of candlelight to elevate your everyday experiences.<p>&nbsp;</p>Our scented candles are crafted to match your unique emotions and vibes, offering a one-of-a-kind sensory journey tailored just for you.<p>&nbsp;</p>At Arcana, we're dedicated to promoting emotional well-being and mindfulness through our candle rituals and meditation practices, helping you find moments of peace and serenity in your daily life.<p>&nbsp;</p>With a calm and reassuring voice, we aim to inspire you with uplifting messages and stories that celebrate moments of transformation and connection.<p>&nbsp;</p>Let us guide you on a journey of self-discovery and inner harmony, where each flicker of the flame illuminates a path to greater well-being.<p>&nbsp;</p>Welcome to Arcana Candles – where inspiration meets illumination.</div>
         </div>
       </div>
-	  <div class="card">
-	    <div class="card-header" role="tab" id="headingTwo1">
-	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1">WHY US?</a> </h5>
+    <div class="card">
+      <div class="card-header" role="tab" id="headingTwo1">
+        <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1">WHY US?</a> </h5>
         </div>
-	    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
-	      <div class="card-body">Arcana Candles is your destination for promoting emotional well-being and mindfulness through the transformative power of candle rituals. As the premier candle brand in Sri Lanka dedicated to enhancing your daily life, we offer a unique experience that sets us apart.<p>&nbsp;</p>At Arcana Candles, we understand the importance of finding moments of peace and serenity amidst life's chaos. That's why we specialize in crafting candles specifically designed to promote emotional well-being. Through our carefully curated blends and meditation practices, we aim to help our customers cultivate a sense of calm and tranquility in their everyday lives.<p>&nbsp;</p>What sets us apart is our unwavering commitment to promoting emotional well-being through candle rituals. As the only candle brand in Sri Lanka that prioritizes this aspect, we take pride in offering a holistic approach to self-care that goes beyond just scent and ambiance.<p>&nbsp;</p>With Arcana Candles, you're not just purchasing a product – you're investing in your well-being. Join us on this journey to find moments of peace and serenity, one candle at a time.</div>
+      <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
+        <div class="card-body">Arcana Candles is your destination for promoting emotional well-being and mindfulness through the transformative power of candle rituals. As the premier candle brand in Sri Lanka dedicated to enhancing your daily life, we offer a unique experience that sets us apart.<p>&nbsp;</p>At Arcana Candles, we understand the importance of finding moments of peace and serenity amidst life's chaos. That's why we specialize in crafting candles specifically designed to promote emotional well-being. Through our carefully curated blends and meditation practices, we aim to help our customers cultivate a sense of calm and tranquility in their everyday lives.<p>&nbsp;</p>What sets us apart is our unwavering commitment to promoting emotional well-being through candle rituals. As the only candle brand in Sri Lanka that prioritizes this aspect, we take pride in offering a holistic approach to self-care that goes beyond just scent and ambiance.<p>&nbsp;</p>With Arcana Candles, you're not just purchasing a product – you're investing in your well-being. Join us on this journey to find moments of peace and serenity, one candle at a time.</div>
         </div>
       </div>
-	  <div class="card">
-	    <div class="card-header" role="tab" id="headingThree1">
-	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1">CUSTOMER FEEDBACK</a> </h5>
+    <div class="card">
+      <div class="card-header" role="tab" id="headingThree1">
+        <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1">CUSTOMER FEEDBACK</a> </h5>
         </div>
-	    <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
-	      <div class="card-body">   <form action="#" method="post">
+      <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
+        <div class="card-body">   <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -183,18 +218,17 @@
 
         <label for="feedback">Feedback:</label>
         <textarea id="feedback" name="feedback" required></textarea>
-
-        <input type="submit" value="Submit Feedback">
+<input type="submit" value="Submit Feedback">
     </form></div>
         </div>
       </div>
     </div>
-	<br>
-	<br>
+  <br>
+  <br>
         
-	<footer class="text-center" style="padding-top: 3px;">
+  <footer class="text-center" style="padding-top: 3px;">
                     <div class="container text-muted py-4 py-lg-5">
-						<img src="images/Untitled design (1) (1).png" class="logo" alt="..." width="80px" height="80px"><br><br>
+            <img src="images/Untitled design (1) (1).png" class="logo" alt="..." width="80px" height="80px"><br><br>
                         <ul class="list-inline">
                             <li class="list-inline-item me-4"><a class="link-secondary" href="#">Web design</a></li>
                             <li class="list-inline-item me-4"><a class="link-secondary" href="#">Development</a></li>
@@ -212,9 +246,9 @@
                                 </svg></li>
                         </ul>
                         <p class="mb-0">Copyright © 2024 Brand</p>
-                    </div>
+</div>
                 </footer>
-	<br>	
+  <br>  
 </div>
 </div>
     
