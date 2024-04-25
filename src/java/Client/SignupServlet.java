@@ -70,11 +70,11 @@ public class SignupServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        response.setHeader("Location", "signup.jsp");
-        
-        
-        
+
+        int delayInSeconds = 0;
+
+        response.setHeader("Refresh", delayInSeconds + "; URL=signup.jsp");
+          
     }
 
     /**
