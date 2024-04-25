@@ -74,6 +74,7 @@ public class SignupServlet extends HttpServlet {
         response.setHeader("Location", "signup.jsp");
         
         
+        
     }
 
     /**
