@@ -101,11 +101,11 @@
                 <tbody>
                     <tr>
                         <td>Username</td>
-                        <td colspan="2"><input type="text" name="un" value="" /></td>
+                        <td colspan="2"><input type="text" name="un" value="" size="30"/></td>
                     </tr>
                     <tr>
                         <td>Password</td>
-                        <td colspan="2"><input type="password" name="pw" value="" /></td>
+                        <td colspan="2"><input type="password" name="pw" value="" size="32"/></td>
                     </tr>
                       <tr>
                           <td><input type="submit" value="Login" /></td>
