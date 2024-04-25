@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>service</title>
+        <title>Services</title>
         <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet">
         <link href="images/favicon.ico" rel="shortcut icon">
@@ -21,7 +21,7 @@
     
 <div class="container-fluid">
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#"><img src="images/Untitled design (1) (1).png" class="card-img-top" alt="..." width="35px" height="35px"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style = "position: fixed; top: 0;left: 0;  right: 0;  z-index: 1000;  background-color: #fff;  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); "> <a class="navbar-brand" href="#"><img src="images/Untitled design (1) (1).png" class="card-img-top" alt="..." width="35px" height="35px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span   class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent1">
         <ul class="navbar-nav mr-auto">
