@@ -1,8 +1,3 @@
-<%-- 
-    Document   : moonlight
-    Created on : Apr 10, 2024, 2:28:36 PM
-    Author     : User
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,14 +6,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mystical Moonlight</title>
+        <title>Home</title>
         <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet">
         <link rel="shortcut icon" href="images/favicon.ico"/>
     </head>
-
-<body>
     
+    <body>
+        
 <div class="container-fluid">
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style = "position: fixed; top: 0;left: 0;  right: 0;  z-index: 1000;  background-color: #fff;  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); "> <a class="navbar-brand" href="#"><img src="images/Untitled design (1) (1).png" class="card-img-top" alt="..." width="35px" height="35px"></a>
@@ -45,89 +40,94 @@
     </nav>
     
 	<br>
-	<br>
-	<div class="para-euphoric">
-	<img class="pop-icon" id="pop-icon" src="images/IMG-20240320-WA0183.png" alt="Icon" style="float:left; margin-right:10px;"  height="300px">
-    <h1 style="font-size: 65px;filter: drop-shadow(8px 10px 7px rgb(0 0 0 / 0.4));"><b>Mystical Moonlight....</b></h1>
-	<br>
-	<p style="font-size: 25px;">A mysterious blend of <b>jasmine and sandalwood</b>, inspired by the magic of moonlit nights and designed to awaken your senses and ignite your<b> imagination</b>.</p>
-	<h1 style="font-size: 35px;"><b>LKR 1139.00</b></h1>
-	<a href="https://www.whatsapp.com/catalog/94760733387/?app_absent=0"><button class="button">ADD TO CART</button></a>
-	<h1 style="font-size: 35px;"><span class="topic"><b>Description</b></span>
-	  <hr class="line"></h1>
-<br>
-  <h1 style="font-size: 25px;"><b>Highlights</b></h1>
- <ul style="font-size: 19px;">
- <li>Mysterious blend of jasmine and sandalwood fragrances</li>
- <li>Inspired by the magic of moonlight nights</li>
- <li>Provides a soothing ambiance for relaxation and reflection</li>
- <li>Presented in a chic tin container for a touch of enchantment</li>
-</ul>
-<br>
-<h1 style="font-size: 25px;"><b>Ingredients</b></h1>
- <ul style="font-size: 19px;">
- <li>Our candles are meticulously hand-poured using locally sourced premium paraffin wax, guaranteeing a clean and enduring burn.</li>
- <li>With 100% cotton core wicks and exquisite fine fragrance oils and essential oils, each candle offers an unparalleled sensory journey. Plus, our reusable tin conterner add extra value to your investment in luxury ambiance.</li>
-</ul>
-<br>
-  <h1 style="font-size: 25px;"><b>Rituals</b></h1>
- <ul style="font-size: 19px;">
- <li>Prepare for a journey into the realms of imagination by lighting the Mystical Moonlight candle in a quiet, darkened space.</li>
- <li>Close your eyes and take several deep breaths, allowing the mysterious blend of jasmine and sandalwood to transport you to a moonlit night.</li>
- <li>Visualize yourself standing beneath a canopy of stars, feeling the cool night air on your skin and the soft glow of the moon above.</li>
- <li>Allow your mind to wander freely, exploring the depths of your imagination and embracing the magic of the unknown.</li>
- <li>Spend time engaging in creative activities such as writing, drawing, or storytelling, allowing the mystical energy of the candle to inspire you.</li>
- <li>As you bask in the enchanting atmosphere of the candle, reflect on the mysteries of the universe and the infinite possibilities that lie ahead.</li>
- <li>Carry this sense of wonder and imagination with you as you go about your day, knowing that the magic of the moonlight is always there to guide you.</li>
-</ul>
-<br>
-</div>
-	<br><br>
-	<div id="accordion1" role="tablist">
-	  <div class="card">
-	    <div class="card-header" role="tab" id="headingOne1">
-	      <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1">OUR STORY</a> </h5>
+        
+	<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
+      </ol>
+	  <div class="carousel-inner" role="listbox">
+	    <div class="carousel-item active"> <img class="d-block mx-auto" src="images/1.svg" alt="First slide">
+	      <div class="carousel-caption">
+          </div>
         </div>
-	    <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
-	      <div class="card-body">Welcome to Arcana Candles, where we believe in the transformative power of candlelight to elevate your everyday experiences.<p>&nbsp;</p>Our scented candles are crafted to match your unique emotions and vibes, offering a one-of-a-kind sensory journey tailored just for you.<p>&nbsp;</p>At Arcana, we're dedicated to promoting emotional well-being and mindfulness through our candle rituals and meditation practices, helping you find moments of peace and serenity in your daily life.<p>&nbsp;</p>With a calm and reassuring voice, we aim to inspire you with uplifting messages and stories that celebrate moments of transformation and connection.<p>&nbsp;</p>Let us guide you on a journey of self-discovery and inner harmony, where each flicker of the flame illuminates a path to greater well-being.<p>&nbsp;</p>Welcome to Arcana Candles – where inspiration meets illumination.</div>
+		  <div class="carousel-item"> <img class="d-block mx-auto" src="images/6.svg" alt="Second slide">
+	      <div class="carousel-caption">
+          </div>
+        </div>
+	    <div class="carousel-item"> <img class="d-block mx-auto" src="images/2.svg" alt="Second slide">
+	      <div class="carousel-caption">
+          </div>
+        </div>
+	    <div class="carousel-item"> <img class="d-block mx-auto" src="images/4.svg" alt="Third slide">
+	      <div class="carousel-caption">
+          </div>	
+        </div>
+
+		  <div class="carousel-item"> <img class="d-block mx-auto" src="images/3.svg" alt="Second slide">
+	      <div class="carousel-caption">
+          </div>
+        </div>
+		  <div class="carousel-item"> <img class="d-block mx-auto" src="images/7.svg" alt="Second slide">
+	      <div class="carousel-caption">
+          </div>
+        </div>
+		  <div class="carousel-item"> <img class="d-block mx-auto" src="images/5.svg" alt="Second slide">
+	      <div class="carousel-caption">
+          </div>
         </div>
       </div>
-	  <div class="card">
-	    <div class="card-header" role="tab" id="headingTwo1">
-	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1">WHY US?</a> </h5>
-        </div>
-	    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
-	      <div class="card-body">Arcana Candles is your destination for promoting emotional well-being and mindfulness through the transformative power of candle rituals. As the premier candle brand in Sri Lanka dedicated to enhancing your daily life, we offer a unique experience that sets us apart.<p>&nbsp;</p>At Arcana Candles, we understand the importance of finding moments of peace and serenity amidst life's chaos. That's why we specialize in crafting candles specifically designed to promote emotional well-being. Through our carefully curated blends and meditation practices, we aim to help our customers cultivate a sense of calm and tranquility in their everyday lives.<p>&nbsp;</p>What sets us apart is our unwavering commitment to promoting emotional well-being through candle rituals. As the only candle brand in Sri Lanka that prioritizes this aspect, we take pride in offering a holistic approach to self-care that goes beyond just scent and ambiance.<p>&nbsp;</p>With Arcana Candles, you're not just purchasing a product – you're investing in your well-being. Join us on this journey to find moments of peace and serenity, one candle at a time.</div>
-        </div>
-      </div>
-	  <div class="card">
-	    <div class="card-header" role="tab" id="headingThree1">
-	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1">CUSTOMER FEEDBACK</a> </h5>
-        </div>
-	    <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
-	      <div class="card-body">  
-                  
-                  
-                    <form action="#" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="feedback">Feedback:</label>
-                        <textarea id="feedback" name="feedback" required></textarea>
-
-                        <input type="submit" value="Submit Feedback">
-                    </form></div>
-                </div>
-            </div>
-        </div>
-        
-        
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+<p>&nbsp;</p>
 	<br>
 	<br>
+	<h1 class="text-center"></h1>
+	<h1 class="pop-icon"  align="center">“WELCOME TO ARCANA CANDLES WHERE INSPIRATION MEETS ILLUMINATION”</h1>
+	<p>&nbsp;</p>
+	
+      
+    <style>
+        .center {
+            text-align: center;
+        }
+        h2 {
+            color: red;
+        }
+    </style>
+    <br>
+<body>
+    <div class="center">
+        <h2><strong>Sign-up Form</strong></h2>
+    </div>
+    <form action="/submit_signup" method="post" border="1">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" required><br><br>
         
+        <label for="contactno">Contact No. : </label>
+        <input type="text" id="contactno" name="contactno" required><br><br>
+        
+        <label for="address">Address : </label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm_password">Confirm Password: </label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+        <input type="submit" value="Signup">
+    </form>
+  
+	<br>
+	<br>
 	<footer class="text-center" style="padding-top: 3px;">
                     <div class="container text-muted py-4 py-lg-5">
 						<img src="images/Untitled design (1) (1).png" class="logo" alt="..." width="80px" height="80px"><br><br>
@@ -153,12 +153,12 @@
 	<br>	
 </div>
 </div>
-    
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.4.1.js"></script>
 <script src="js/script2.js"></script>
 
-</body>
-
+    </body>
+    
 </html>
+

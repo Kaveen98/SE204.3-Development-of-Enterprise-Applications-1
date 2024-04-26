@@ -21,7 +21,7 @@
         
 <div class="container-fluid">
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#"><img src="images/Untitled design (1) (1).png" class="card-img-top" alt="..." width="35px" height="35px"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style = "position: fixed; top: 0;left: 0;  right: 0;  z-index: 1000;  background-color: #fff;  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); "> <a class="navbar-brand" href="#"><img src="images/Untitled design (1) (1).png" class="card-img-top" alt="..." width="35px" height="35px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span 	class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent1">
         <ul class="navbar-nav mr-auto">
@@ -95,16 +95,15 @@
 	<h1 class="pop-icon"  align="center">“WELCOME TO ARCANA CANDLES WHERE INSPIRATION MEETS ILLUMINATION”</h1>
 	<p>&nbsp;</p>
 	
-        <form>
+        <form action="" method="post" name="log1">
             <table>
-               
                 <tbody>
                     <tr>
-                        <td>Username</td>
+                        <td>Username: </td>
                         <td colspan="2"><input type="text" name="un" value="" size="30"/></td>
                     </tr>
                     <tr>
-                        <td>Password</td>
+                        <td>Password: </td>
                         <td colspan="2"><input type="password" name="pw" value="" size="32"/></td>
                     </tr>
                       <tr>
@@ -116,7 +115,7 @@
         </form>
               <h1 class="" align="center">ELEVATE YOUR <b>SPACE</b>, ENHANCE YOUR <b>MOOD</b>, AND EMBRACE <b>PURE BLISS...</b></h1>
     
-              <form>
+              <form action="SignupServlet" method="post" name="signup">
                   <h4 align="center">Join with us</h4>
                   <center>  <input type="submit" value="SignUp" /> </center>
               </form>
