@@ -155,13 +155,16 @@
    <div class="row">
     <div class="col">
  <h2>Our Service</h2><hr>
- <p align="justify">Welcome to Arcana Candles, where we believe in the transformative power of candlelight to elevate your everyday experiences.</p>
-<p align="justify">Dive deeper into holistic wellness with our comprehensive Ayurveda product and service page! We go beyond just selling products - we empower you on your journey to inner balance. Explore the ancient wisdom of Ayurveda on our service page, where we explain how natural solutions can address your unique needs. Discover our curated line of Ayurvedic products, each featuring detailed descriptions, key ingredients, and potential benefits.  Whether your goal is stress relief, immunity support, or a radiant glow, we have something for you.  Interactive elements like quizzes and consultations with Ayurvedic specialists help you find the perfect product for a personalized approach. Flexible service packages and potential free consultations make Ayurveda accessible. We tailor our offerings to your unique wellness goals, guiding you towards a path of inner harmony with Ayurveda's ancient wisdom.</p>
- <p>Welcome to Arcana Candles - where inspiration meets illumination.</p>
+ <h5>Discover Your Perfect Flame:</h5>
+		<p > Explore our extensive collection of candles, featuring a captivating range of scents, sizes, colors, and styles. Whether you seek a calming lavender aroma for relaxation, a burst of citrus to energize your space, or a captivating blend for a luxurious ambiance, we have the perfect candle to ignite your senses.</p>
+
+<h5>Informed Candle Choices:</h5> 
+			<p >	We believe in transparency. Each candle description provides detailed information about the fragrance profile, allowing you to visualize the scent journey. You'll also find details on burn time to ensure long-lasting enjoyment and a breakdown of ingredients for those seeking natural or eco-friendly options.</p>
+
    </div>
    <div class="col">
     <div class="image">
-        <img src="images/babe72751524339bc93234d440a6deba.jpg">
+        <img src="images/3428c3e7b29082ee0bf43c5608523cfc.jpg">
       </div>
    </div>
   </div>
@@ -171,14 +174,14 @@
    <div class="row">
  <div class="col">
     <div class="image">
-        <img src="images/0608d2e850cd7cd509394d42efe87897.jpg">
+        <img src="images/4ce81b4caf289cd083b92e0888843f87.jpg">
       </div>
  </div>
     <div class="col">
  <h2>Our Service</h2><hr>
- <p align="justify">At Arcana Candles, we understand the importance of finding moments of peace and serenity amidst life's chaos. That's why we specialize in crafting candles specifically designed to promote emotional well-being. Through our carefully curated blends and meditation practices, we aim to help our customers cultivate a sense of calm and tranquility in their everyday lives.</p>
+ <h5>Effortless Shopping & Secure Transactions:</h5> <p> Our user-friendly website makes navigating and selecting your perfect candle a breeze. Add your favorites to your cart with a few clicks, and experience a smooth checkout process with secure payment gateways that ensure your peace of mind. <p>
 
- <p align="justify">What sets us apart is our unwavering commitment to promoting emotional well-being through candle rituals. As the only candle brand in Sri Lanka that prioritizes this aspect, we take pride in offering a holistic approach to self-care that goes beyond just scent and ambiance.</p>
+<h5>Dedicated Customer Support:</h5> <p> We're passionate about candles and here to help!  Our comprehensive FAQ section addresses common inquiries. If you have any further questions or specific needs, feel free to contact our friendly customer support team through email or chat.  We're happy to assist you in finding the ideal candle or answer any questions you may have.</p>
    
 	  </div>
   
