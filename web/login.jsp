@@ -95,16 +95,16 @@
 	<h1 class="pop-icon"  align="center">“WELCOME TO ARCANA CANDLES WHERE INSPIRATION MEETS ILLUMINATION”</h1>
 	<p>&nbsp;</p>
 	
-        <form action="" method="post" name="log1">
+        <form action="LoginServlet" method="post" name="log1">
             <table>
                 <tbody>
                     <tr>
                         <td>Username: </td>
-                        <td colspan="2"><input type="text" name="un" value="" size="30"/></td>
+                        <td colspan="2"><input type="text" name="username" value="" size="30"/></td>
                     </tr>
                     <tr>
                         <td>Password: </td>
-                        <td colspan="2"><input type="password" name="pw" value="" size="32"/></td>
+                        <td colspan="2"><input type="password" name="password" value="" size="30"/></td>
                     </tr>
                       <tr>
                           <td><input type="submit" value="Login" /></td>

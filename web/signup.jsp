@@ -100,11 +100,12 @@
         }
     </style>
     <br>
+    
 <body>
     <div class="center">
         <h2><strong>Sign-up Form</strong></h2>
     </div>
-    <form action="/submit_signup" method="post" border="1">
+    <form action="ClientServlet" method="post" border="1">
         <label for="username">Username: </label>
         <input type="text" id="username" name="username" required><br><br>
         

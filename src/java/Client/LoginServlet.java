@@ -7,19 +7,21 @@ package Client;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author ASUS
  */
-public class ClientServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,10 +40,10 @@ public class ClientServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ClientServlet</title>");            
+            out.println("<title>Servlet LoginServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ClientServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet LoginServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -75,18 +77,43 @@ public class ClientServlet extends HttpServlet {
             throws ServletException, IOException {
         
         String username = request.getParameter("username");
-        String contactno = request.getParameter("contactno");
-        String address = request.getParameter("address");
-        String email = request.getParameter("email");
         String password = request.getParameter("password");
+        String driver = "com.mysql.jdbc.Driver";
+        String url = "jdbc:mysql://localhost:3306/arcana_candles";
+        String query = "SELECT * FROM user WHERE username=? AND password=?";
         
-        Client client = new Client();
+        
         try {
-            client.addClient(username,contactno,address,email,password);
-        } catch (SQLException ex) {
-            Logger.getLogger(ClientServlet.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
+            Class.forName(driver);
+            Connection con = DriverManager.getConnection(url,"root","");
+            
+            PreparedStatement statement = con.prepareStatement(query);
+            statement.setString(1, username);
+            statement.setString(2, password);
+            
+            ResultSet result = statement.executeQuery();
+            
+            if (result.next()) {
+                // Valid username and password
+                HttpSession session = request.getSession();
+                session.setAttribute("username", username);
+                response.sendRedirect("index.jsp"); 
+            } else {
+                // Invalid username or password
+                RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+                request.setAttribute("error", "Invalid username or password");
+                dispatcher.forward(request, response);
+            }
+            
+                result.close();
+                statement.close();
+                con.close();
+            
+            }catch (SQLException ex) {
+                Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
+            }    
     }
 
     /**
