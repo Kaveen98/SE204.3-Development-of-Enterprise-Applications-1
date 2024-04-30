@@ -204,7 +204,7 @@ body{
 	  
 }
 .card-img-top:hover {
-  transform: scale(1.1); /* Increase size on hover */
+  transform: scale(1.05); /* Increase size on hover */
 }
 
 @keyframes pop {
@@ -265,15 +265,78 @@ form {
         }
 table{
 	width: 560px; /* Set the width of the table container to 280px */
-    height: 600px;
+        height: 600px;
 	justify-content:center;
 	align-content: center;
 	max-width: 100%;
-    height: auto;
+        height: auto;
 }
    td, th {
             text-align: center; /* Center align text in table cells */
             padding: 8px; /* Add padding to the cells for better spacing */
             border:none;/* Add borders around cells */
         }
+
+@media(min-width: 640px) {
+    .sm\:mx-20 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+.p-3 {
+    padding: .75rem;
+}
+.flex-col {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+.gap-8 {
+    gap: 2rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+.h-auto {
+    height: auto;
+}
+
+.sm\:h-auto {
+    height: auto; /* for small screens */
+}
+
+.w-1\/2 {
+    width: 50%; /* width: 50% */
+}
+.w-1\/3 {
+    width: 33.333%; /* width: 1/3 */
+}
+
+.rounded-lg {
+    border-radius: 0.5rem; /* rounded corners */
+}
+
+.px-2 {
+    padding-left: 0.5rem; /* horizontal padding */
+    padding-right: 0.5rem; /* horizontal padding */
+}
+
+.mx-auto {
+    margin-left: auto; /* center horizontally */
+    margin-right: auto; /* center horizontally */
+}
+
+.image-link img {
+    width:445px !important;
+}
+
+.image-link-2 img{
+    width:298px !important;
+}
 

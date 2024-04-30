@@ -15,6 +15,25 @@
         <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet">
         <link rel="shortcut icon" href="images/favicon.ico"/>
+        <style>
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+    .row70 {
+        height: 300px;
+    }
+    .col1{
+        width: 300px;
+    }
+    .col2{
+        width: 200px;
+    }
+</style>
     </head>
     
     <body>
@@ -105,51 +124,21 @@
 	<br>
 	<br>
 	<br>
-<div class="product">
-	    <div class="slider">
-        <div class="item">
-          <img src="images/Sunset Meditation Music.jpeg" class="card-img-top" alt="...">
-		  <br><h1 class="slide-head"><b>Relaxation And Tranquillity</b></h1>
-          <a href="tranquil.jsp"><button class="button" >see more</button></a>
-          </div>
-        <div class="item">
-          <img src="images/леса,луга и поля.jpeg" class="card-img-top" alt="First Image">
-          <br><h1  class="slide-head">Love And Passion</h1>
-          <a href="romantic.jsp"><button class="button" >see more</button></a>
-          </div>
-       <div class="item">
-          <img src="images/16 Signs That You_re Clairsentient.jpeg" class="card-img-top" alt="...">
-          <br><h1 class="slide-head">Calm And Clarity</h1>
-          <a href="soothing.jsp"><button class="button" >see more</button></a>
-          </div>
-       <div class="item">
-          <img src="images/9e325a71-c7be-4b36-9425-c908b0ce15a9.jpeg" class="card-img-top" alt="...">
-          <br><h1 class="slide-head">Positive And Joy</h1>
-          <a href="euphoric.jsp"><button class="button" >see more</button></a>
-          </div>
-        <div class="item">
-          <img src="images/views🌿.jpeg" class="card-img-top" alt="...">
-		  <br><h1 class="slide-head">Connection To Nature</h1>
-          <a href="enchanted.jsp"><button class="button" >see more</button></a>
-          </div>
-        <div class="item">
-          <img src="images/Holmes Quote_ Imagination.jpeg" class="card-img-top" alt="...">
-          <br><h1 class="slide-head">Imagination</h1>
-          <a href="moonlight.jsp"><button class="button" >see more</button></a>
-          </div>
-		<div class="item">
-          <img src="images/Conceito de bem-estar com a mulher no salão de massagem _ Foto Premium.jpeg" class="card-img-top" alt="...">
-          <br><h1 class="slide-head">Balance And Inner Peace</h1>
-          <a href="divine.jsp"><button class="button" >see more</button></a>
-          </div>
-      <button id="next">></button>
-      <button id="prev"><</button> 
-          
-      </div>
-	</div>
-	<br>
-	<br>
-	<br>
+        <div class="sm:mx-20 p-3 flex flex-col gap-8 py-7 ">
+            <div class="flex sm:mx-20 mx-10 ">
+                <a href="divine.jsp" class="image-link"><img src="https://firebasestorage.googleapis.com/v0/b/arcana-candles.appspot.com/o/Moods%2FBalance-and%20%20Inner-peace.png?alt=media&amp;token=b8186b2b-1aa0-4089-93f9-87107e6f6e41" class="h-auto sm:h-auto w-1/2 rounded-lg px-2 mx-auto card-img-top"></a>
+                <a href="soothing.jsp" class="image-link"><img src="https://firebasestorage.googleapis.com/v0/b/arcana-candles.appspot.com/o/Moods%2FCalm-and-Clarity.png?alt=media&amp;token=1750e461-a640-4ce7-b0f8-83ae1818d758" class="h-auto sm:h-auto w-1/2 rounded-lg px-2 mx-auto card-img-top"></a>
+            </div>
+            <div class="flex sm:mx-20 mx-10">
+                <a href="moonlight.jsp" class="image-link-2"><img src="https://firebasestorage.googleapis.com/v0/b/arcana-candles.appspot.com/o/Moods%2FIgnite-Imagination.png?alt=media&amp;token=a172983c-89da-4649-885f-c970350b5d70" class="h-auto sm:h-auto w-1/3 rounded-lg px-2 mx-auto card-img-top"></a>
+                <a href="euphoric.jsp" class="image-link-2"><img src="https://firebasestorage.googleapis.com/v0/b/arcana-candles.appspot.com/o/Moods%2FPositivity-and-Joy.png?alt=media&amp;token=ff4151e9-1b14-4006-b0f1-451ff27081a7" class="h-auto sm:h-auto w-1/3 rounded-lg px-2 mx-auto card-img-top"></a>
+                <a href="tranquil.jsp" class="image-link-2"><img src="https://firebasestorage.googleapis.com/v0/b/arcana-candles.appspot.com/o/Moods%2FRelaxation-and-Tranquility.png?alt=media&amp;token=b3de069d-c4ab-4d6a-9485-64ebd12914bb" class="h-auto sm:h-auto w-1/3 rounded-lg px-2 mx-auto card-img-top"></a>
+            </div>
+            <div class="flex sm:mx-20 mx-10">
+                <a href="enchanted.jsp" class="image-link"><img src="https://firebasestorage.googleapis.com/v0/b/arcana-candles.appspot.com/o/Moods%2Fconnection-to-Nature.png?alt=media&amp;token=c516737c-94d4-4f1a-9ff2-f18f831f49ed" class="h-auto sm:h-auto w-1/2 rounded-lg px-2 mx-auto card-img-top"></a>
+                    <a href="romantic.jsp" class="image-link"><img src="https://firebasestorage.googleapis.com/v0/b/arcana-candles.appspot.com/o/Moods%2Flove-and-Passion.png?alt=media&amp;token=a9ffa02c-3685-4d58-b0ed-a50a5ab2f0ca" class="h-auto sm:h-auto w-1/2 rounded-lg px-2 mx-auto card-img-top"></a>
+            </div></div>
+
 	<br>
 	<br>
 	<br>
