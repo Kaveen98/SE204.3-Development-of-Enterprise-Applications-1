@@ -50,7 +50,7 @@
 	<img class="pop-icon" id="pop-icon" src="images/IMG-20240320-WA0217.png" alt="Icon" style="float:left; margin-right:10px;"  height="300px">
     <h1 style="font-size: 65px;filter: drop-shadow(8px 10px 7px rgb(0 0 0 / 0.4));"><b>Tranquil Oasis....</b></h1>
 	<br>
-	<p style="font-size: 25px;">A calming blend of <b>lavender and chamomile</b>essential oils, perfect for unwinding after a hectic day and promoting <b>relaxation and tranquillity</b>.</p>
+	<p style="font-size: 25px;">A calming blend of <b>lavender and chamomile</b> essential oils, perfect for unwinding after a hectic day and promoting <b>relaxation and tranquillity</b>.</p>
 	<h1 style="font-size: 35px;"><b>LKR 1139.00</b></h1>
 	<a href="https://www.whatsapp.com/catalog/94760733387/?app_absent=0"><button class="button">ADD TO CART</button></a>
          <br>

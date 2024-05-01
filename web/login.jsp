@@ -115,7 +115,7 @@
         </form>
               <h1 class="" align="center">ELEVATE YOUR <b>SPACE</b>, ENHANCE YOUR <b>MOOD</b>, AND EMBRACE <b>PURE BLISS...</b></h1>
     
-              <form action="SignupServlet" method="post" name="signup">
+              <form action="signup.jsp" method="post" name="signup">
                   <h4 align="center">Join with us</h4>
                   <center>  <input type="submit" value="SignUp" /> </center>
               </form>
