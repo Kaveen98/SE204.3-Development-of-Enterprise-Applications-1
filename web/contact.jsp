@@ -135,7 +135,7 @@
 	<div>
 		
 	</div>
-	<table width="200" align="center" >
+        <table width="200" align="center" style="font-weight: bold;">
 	  <tbody>
 	    <tr>
 	      <td>Mobile </td> <td>+94 76 07333 387</td>  
