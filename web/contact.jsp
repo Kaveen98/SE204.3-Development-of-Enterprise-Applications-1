@@ -102,7 +102,7 @@
 	<br>
 	<h1 class="text-center"></h1>
 	<h1 class="pop-icon"  align="center">“YOU CAN CONTACT US THROUGHT  THE FOLLOWING SOCIAL MEADIA PLATFORM...”</h1>
-	
+	<p>&nbsp; </p>
 	<br>
 	<br>
 	<h1 style="font-size: 30px;"><span class="topic"></span>
@@ -135,7 +135,7 @@
 	<div>
 		
 	</div>
-        <table width="200" align="center" style="font-weight: bold;">
+        <table width="200" align="center" style="font-weight: bold;" >
 	  <tbody>
 	    <tr>
 	      <td>Mobile </td> <td>+94 76 07333 387</td>  
