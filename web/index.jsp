@@ -39,7 +39,7 @@
     
     <body>
         
-<div class="container-fluid" style="width: auto; ">
+<div class="container-fluid" >
 <div class="container" style="width: 120%;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style = "position: fixed; top: 0;left: 0;  right: 0;  z-index: 1000;  background-color: #fff;  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); "> <a class="navbar-brand" href="#"><img src="images/Untitled design (1) (1).png" class="card-img-top" alt="..." width="35px" height="35px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span 	class="navbar-toggler-icon"></span> </button>
@@ -76,8 +76,10 @@
     </nav>
     
 	<br>
-        
-	<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent">
+        <br>
+        <br>
+        <br>
+	<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent;width: 120%; margin-left: -10%;">
 	  <ol class="carousel-indicators">
 	    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
 	    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
@@ -157,63 +159,7 @@
          <div class="product" style="align-content: center;">
 	   
     
-<div class="container bootstrap snipets">
-    <h1 style="alignment-adjust: center;font-weight: bold;color: #cc9900;display: inline-block; padding: 10px;border: 2px solid black;border-radius: 10px;" class="text-center">OUR COLLECTION</h1>
-   <div class="row flow-offset-1">
-    
-       <div class="col-xs-6 col-md-4">
-           <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0217.png" alt="" style="width: 100%;"></a>
-         <div class="caption">
-           <h6><a href="#">Tranquil oasis</a></h6><span class="price sale">LKR 1139.00</span>
-         </div>
-       </div>
-     </div>
-     
-       <div class="col-xs-6 col-md-4">
-       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0153(1).png" alt=""  style="width: 100%;"></a>
-         <div class="caption">
-           <h6><a href="#">Romantic glow</a></h6><span class="price sale">LKR 1139.00
-</span>
-         </div>
-       </div>
-     </div>
-     <div class="col-xs-6 col-md-4">
-       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0219(1) (1).png" alt=""  style="width: 100%;"></a>
-         <div class="caption">
-           <h6><a href="#">Soothing Serenity</a></h6><span class="price">LKR 1139.00</span>
-         </div>
-       </div>
-     </div>
-     <div class="col-xs-6 col-md-4">
-       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0165.png" alt=""  style="width: 100%;"></a>
-         <div class="caption">
-           <h6><a href="#">Euphoric Bliss</a></h6><span class="price sale">LKR 1139.00</span>
-         </div>
-       </div>
-     </div>
-     <div class="col-xs-6 col-md-4">
-       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0151 (1) (1).png" alt=""  style="width: 100%;"></a>
-         <div class="caption">
-           <h6><a href="#">Enchanted Forestt</a></h6><span class="price sale">LKR 1139.00</span>
-         </div>
-       </div>
-     </div>
-     <div class="col-xs-6 col-md-4">
-       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0183.png" alt=""  style="width: 100%;"></a>
-         <div class="caption">
-           <h6><a href="#">Mystical Moonlight</a></h6><span class="price sale">LKR 1139.00</span>
-         </div>
-       </div>
-     </div>
-     <div class="col-xs-6 col-md-4">
-       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0145 (1).png" alt=""  style="width: 100%;"></a>
-         <div class="caption">
-           <h6><a href="#">Divine Harmony</a></h6><span class="price sale">LKR 1139.00</span>
-         </div>
-       </div>
-     </div> 
-   </div>
- </div>
+
 
 	<br>
 	<br>
