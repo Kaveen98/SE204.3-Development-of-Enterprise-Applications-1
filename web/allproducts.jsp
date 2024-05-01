@@ -192,11 +192,7 @@
 
   <br>
   <br>
-  <br>
-
-  <br>
-  <br>
-  <br>
+  <br><br><br><br>
   <%@include file="includes/feedbackAccordion.jsp" %>
   <br>
   <br>

@@ -32,7 +32,7 @@
   <br><br>
         <div class="container">
             <center>
-                <form name="adminlog" action="AdminServlet">
+                <form name="adminlog" action="AdminServlet" method="get">
                     <table border="1" cellspacing="1" cellpadding="1">
                         <tbody>
                             <tr>

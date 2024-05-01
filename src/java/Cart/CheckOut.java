@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -76,6 +77,7 @@ public class CheckOut extends HttpServlet {
             throws ServletException, IOException {
         
                     HttpSession session = request.getSession();
+                    // Retrieve session attributes
                     Integer TranquilCount = (Integer) session.getAttribute("TranquilCount");
                     Integer RomanticCount = (Integer) session.getAttribute("RomanticCount");
                     Integer SoothingCount = (Integer) session.getAttribute("SoothingCount");
@@ -83,20 +85,37 @@ public class CheckOut extends HttpServlet {
                     Integer EnchantedCount = (Integer) session.getAttribute("EnchantedCount");
                     Integer MoonlightCount = (Integer) session.getAttribute("MoonlightCount");
                     Integer DivineCount = (Integer) session.getAttribute("DivineCount");
-                    String user_id = (String) session.getAttribute("user_id");
+                    String userid = (String) session.getAttribute("userid");
                     
-                    Integer Total = (TranquilCount +RomanticCount + SoothingCount + EuphoricCount + EnchantedCount + MoonlightCount + DivineCount)*1139;
+                    
+                    
+    // Perform null checks and calculate Total
+    int Total = 0;
+    if (TranquilCount != null) Total += TranquilCount;
+    if (RomanticCount != null) Total += RomanticCount;
+    if (SoothingCount != null) Total += SoothingCount;
+    if (EuphoricCount != null) Total += EuphoricCount;
+    if (EnchantedCount != null) Total += EnchantedCount;
+    if (MoonlightCount != null) Total += MoonlightCount;
+    if (DivineCount != null) Total += DivineCount;
+    Total *= 1139;
 
-                    Order order = new Order();
-                    response.sendRedirect("https://www.whatsapp.com/catalog/94760733387/?app_absent=0");
-            try {
-                order.addOrder(user_id,TranquilCount,RomanticCount,SoothingCount,EuphoricCount,EnchantedCount,
-                        MoonlightCount,DivineCount,Total);
-            } catch (SQLException ex) {
-                Logger.getLogger(CheckOut.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    
-                    
+    // Perform database operations
+    try {
+        Order order = new Order();
+        order.addOrder(userid, TranquilCount, RomanticCount, SoothingCount, EuphoricCount,
+                EnchantedCount, MoonlightCount, DivineCount, Total);
+    } catch (SQLException ex) {
+        Logger.getLogger(CheckOut.class.getName()).log(Level.SEVERE, null, ex);
+        // Handle database error
+        request.setAttribute("error", "Database error occurred.");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("error.jsp");
+        dispatcher.forward(request, response);
+        return;
+    }
+
+    // Redirect the user to the WhatsApp catalog link
+    response.sendRedirect("https://www.whatsapp.com/catalog/94760733387/?app_absent=0");
     }
 
     /**
