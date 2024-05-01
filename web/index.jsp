@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +39,7 @@
     
     <body>
         
-<div class="container-fluid">
+<div class="container-fluid" style="width: 100%; ">
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style = "position: fixed; top: 0;left: 0;  right: 0;  z-index: 1000;  background-color: #fff;  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); "> <a class="navbar-brand" href="#"><img src="images/Untitled design (1) (1).png" class="card-img-top" alt="..." width="35px" height="35px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span 	class="navbar-toggler-icon"></span> </button>
@@ -56,9 +57,20 @@
 			  <a class="dropdown-item card-img-top" href="divine.jsp">Divine Harmony</a>
               </div>
           </li>
-          <li class="nav-item"> <a class="nav-link card-img-top" href="about.jsp">About Us&nbsp;</a> </li>
+          <li class="nav-item"> 
+                                      <li class="nav-item"> <a class="nav-link card-img-top" href="allproducts.jsp">All products&nbsp;</a> </li>
+                                      <li class="nav-item">  <a class="nav-link card-img-top" href="about.jsp">About Us&nbsp;</a> </li>
 		  <li class="nav-item"> <a class="nav-link card-img-top" href="service.jsp">Service&nbsp;</a> </li>
 		  <li class="nav-item"> <a class="nav-link card-img-top" href="contact.jsp">Contact Us</a> </li>
+                  <% if(session.getAttribute("auth") == null) {%>
+                    <li class="nav-item">
+                        <button class="navbar-button" onclick="location.href='login.jsp';">Login / Register</button>
+                    </li>
+                <% }else {%>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout"><i class="fa fa-user"></i> <%=session.getAttribute("auth")%>(Log Out)</a>
+                    </li>
+                <% }%>
         </ul>
       </div>
     </nav>
@@ -138,6 +150,70 @@
                 <a href="enchanted.jsp" class="image-link"><img src="https://firebasestorage.googleapis.com/v0/b/arcana-candles.appspot.com/o/Moods%2Fconnection-to-Nature.png?alt=media&amp;token=c516737c-94d4-4f1a-9ff2-f18f831f49ed" class="h-auto sm:h-auto w-1/2 rounded-lg px-2 mx-auto card-img-top"></a>
                     <a href="romantic.jsp" class="image-link"><img src="https://firebasestorage.googleapis.com/v0/b/arcana-candles.appspot.com/o/Moods%2Flove-and-Passion.png?alt=media&amp;token=a9ffa02c-3685-4d58-b0ed-a50a5ab2f0ca" class="h-auto sm:h-auto w-1/2 rounded-lg px-2 mx-auto card-img-top"></a>
             </div></div>
+        <br>
+        <br>
+        <br>
+        
+         <div class="product" style="align-content: center;">
+	   
+    
+<div class="container bootstrap snipets">
+    <h1 style="alignment-adjust: center;font-weight: bold;color: #cc9900;display: inline-block; padding: 10px;border: 2px solid black;border-radius: 10px;" class="text-center">OUR COLLECTION</h1>
+   <div class="row flow-offset-1">
+    
+       <div class="col-xs-6 col-md-4">
+           <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0217.png" alt="" style="width: 100%;"></a>
+         <div class="caption">
+           <h6><a href="#">Tranquil oasis</a></h6><span class="price sale">LKR 1139.00</span>
+         </div>
+       </div>
+     </div>
+     
+       <div class="col-xs-6 col-md-4">
+       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0153(1).png" alt=""  style="width: 100%;"></a>
+         <div class="caption">
+           <h6><a href="#">Romantic glow</a></h6><span class="price sale">LKR 1139.00
+</span>
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0219(1) (1).png" alt=""  style="width: 100%;"></a>
+         <div class="caption">
+           <h6><a href="#">Soothing Serenity</a></h6><span class="price">LKR 1139.00</span>
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0165.png" alt=""  style="width: 100%;"></a>
+         <div class="caption">
+           <h6><a href="#">Euphoric Bliss</a></h6><span class="price sale">LKR 1139.00</span>
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0151 (1) (1).png" alt=""  style="width: 100%;"></a>
+         <div class="caption">
+           <h6><a href="#">Enchanted Forestt</a></h6><span class="price sale">LKR 1139.00</span>
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0183.png" alt=""  style="width: 100%;"></a>
+         <div class="caption">
+           <h6><a href="#">Mystical Moonlight</a></h6><span class="price sale">LKR 1139.00</span>
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+       <div class="product tumbnail thumbnail-3"><a href="#"><img src="images/IMG-20240320-WA0145 (1).png" alt=""  style="width: 100%;"></a>
+         <div class="caption">
+           <h6><a href="#">Divine Harmony</a></h6><span class="price sale">LKR 1139.00</span>
+         </div>
+       </div>
+     </div> 
+   </div>
+ </div>
 
 	<br>
 	<br>
@@ -203,7 +279,62 @@
                         <p class="mb-0">Copyright © 2024 Brand</p>
                     </div>
                 </footer>
-	<br>	
+	<br>
+        
+         <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+         <a href="#">Scanfcode</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+        
 </div>
 </div>
 <script src="js/jquery-3.4.1.min.js"></script>
