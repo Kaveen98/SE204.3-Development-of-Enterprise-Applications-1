@@ -21,7 +21,7 @@
     
 <div class="container-fluid">
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style = "position: fixed; top: 0;left: 0;  right: 0;  z-index: 1000;  background-color: #fff;  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); "> <a class="navbar-brand" href="#"><img src="images/Untitled design (1) (1).png" class="card-img-top" alt="..." width="35px" height="35px"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#"><img src="images/Untitled design (1) (1).png" class="card-img-top" alt="..." width="35px" height="35px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span 	class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent1">
         <ul class="navbar-nav mr-auto">
@@ -35,29 +35,18 @@
 				<a class="dropdown-item card-img-top" href="enchanted.jsp">Enchanted Forest</a>
 				<a class="dropdown-item card-img-top" href="moonlight.jsp">Mystical Moonlight</a>
 			  <a class="dropdown-item card-img-top" href="divine.jsp">Divine Harmony</a>
-              </div>
+            </div>
           </li>
-         <li class="nav-item"> <a class="nav-link card-img-top" href="allproducts.jsp">All products&nbsp;</a> </li>
           <li class="nav-item"> <a class="nav-link card-img-top" href="about.jsp">About Us&nbsp;</a> </li>
 		  <li class="nav-item"> <a class="nav-link card-img-top" href="service.jsp">Service&nbsp;</a> </li>
 		  <li class="nav-item"> <a class="nav-link card-img-top" href="contact.jsp">Contact Us</a> </li>
-                  <% if(session.getAttribute("auth") == null) {%>
-                    <li class="nav-item">
-                        <button class="navbar-button" onclick="location.href='login.jsp';">Login / Register</button>
-                    </li>
-                <% }else {%>
-                    <li class="nav-item">
-                        <a class="nav-link" href="logout"><i class="fa fa-user"></i> <%=session.getAttribute("auth")%>(Log Out)</a>
-                    </li>
-                <% }%>
         </ul>
       </div>
     </nav>
     
-    
 	<br>
         
-	<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent;width: 120%; margin-left: -10%;">
+	<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent">
 	  <ol class="carousel-indicators">
 	    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
 	    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
@@ -157,13 +146,44 @@
       <button id="prev"><</button> 
           
       </div>
-	</div>
+</div>
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
+	<div class="container" style="background-color:antiquewhite ;">
+   <div class="row">
+    <div class="col">
+ <h2>Our Creations</h2><hr>
+
+<p align="justify">Welcome to Arcana Candles, where we illuminate moments with the flicker of a flame and the scent of memories. Born from a passion for craftsmanship and a love for creating ambiance, we handcraft each candle with care and blending premium ingredients to evoke emotions and transform spaces. From cozy evenings curled up with a book to vibrant gatherings with loved ones, our candles are designed to complement every occasion. With sustainability at our core, we strive to minimize our environmental footprint while maximizing the joy our candles bring to your home. Join us in celebrating life's moments, one candle at a time</p>
+   </div>
+   <div class="col">
+    <div class="image">
+        <img src="images/pngtree-romantic-candle-light-spa-warm-candle-photo-image_519396.jpg">
+      </div>
+   </div>
+  </div>
+ </div>
+ 
+ <div class="container" style="background-color:azure ;">
+   <div class="row">
+ <div class="col">
+    <div class="image">
+        <img src="images/c5de3582293a274f88186cfedf222b68.jpg">
+      </div>
+ </div>
+    <div class="col">
+
+ <p align="justify">At Arcana Candles, we believe in the power of candles to elevate everyday moments into extraordinary experiences. With a dedication to quality craftsmanship and a commitment to sustainability, we pour our passion into every candle we create. Each fragrance is carefully curated, blending rich aromas to evoke nostalgia, inspire creativity, and soothe the soul. From the warm glow that fills a room to the subtle, lingering scent that lingers long after the flame is extinguished, our candles are crafted to enhance every aspect of your life. Whether you're seeking relaxation, inspiration, or simply a touch of ambiance, we invite you to explore our collection and discover the magic of rcana Candles.</p>
+	  </div>
+  
+  </div>
+ </div>
+	
+	
 	<div id="accordion1" role="tablist">
 	  <div class="card">
 	    <div class="card-header" role="tab" id="headingOne1">
@@ -189,6 +209,7 @@
 	      <div class="card-body">   <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
+			 
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
@@ -224,8 +245,7 @@
                         </ul>
                         <p class="mb-0">Copyright © 2024 Brand</p>
                     </div>
-                </footer>
-         
+    </footer>
 	<br>	
 </div>
 </div>
