@@ -12,6 +12,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import com.mysql.jdbc.Statement;
+import static java.lang.System.out;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,6 +21,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -68,6 +70,14 @@ public class AdminServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            
+            
+            if(!username.equals("admin") && !password.equals("admin")){
+                response.sendRedirect("adminlogin.jsp?error=Not+Found");
+            }
+
         
         String driver = "com.mysql.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/arcana_candles";

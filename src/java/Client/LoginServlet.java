@@ -92,22 +92,24 @@ public class LoginServlet extends HttpServlet {
             statement.setString(2, password);
             
             ResultSet result = statement.executeQuery();
+        
+        if (result.next()) {
+            // Valid username and password
+            HttpSession session = request.getSession();
+            String userid = result.getString("userid"); // Get userid from result
+            session.setAttribute("userid", userid);
+            response.sendRedirect("index.jsp");
             
-            if (result.next()) {
-                // Valid username and password
-                HttpSession session = request.getSession();
-                session.setAttribute("auth", username);
-                response.sendRedirect("index.jsp"); 
-            } else {
-                // Invalid username or password
-                RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
-                request.setAttribute("error", "Invalid username or password");
-                dispatcher.forward(request, response);
-            }
-            
-                result.close();
-                statement.close();
-                con.close();
+        } else {
+            // Invalid username or password
+            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+            request.setAttribute("error", "Invalid username or password");
+            dispatcher.forward(request, response);
+        }
+        
+            result.close();
+            statement.close();
+            con.close();
             
             }catch (SQLException ex) {
                 Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
