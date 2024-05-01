@@ -3,23 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Client;
+package ClickCount;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author ASUS
  */
-public class ClientServlet extends HttpServlet {
+public class RomanticCountRemove extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,10 +36,10 @@ public class ClientServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ClientServlet</title>");            
+            out.println("<title>Servlet RomanticCountRemove</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ClientServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet RomanticCountRemove at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -74,20 +72,22 @@ public class ClientServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        String username = request.getParameter("username");
-        String contactno = request.getParameter("contactno");
-        String address = request.getParameter("address");
-        String email = request.getParameter("email");
-        String password = request.getParameter("password");
-        
-        Client client = new Client();
-        try {
-            client.addClient(username,contactno,address,email,password);
-            response.sendRedirect("login.jsp");
-        } catch (SQLException ex) {
-            Logger.getLogger(ClientServlet.class.getName()).log(Level.SEVERE, null, ex);
+        HttpSession session = request.getSession();
+        Integer RomanticCount = (Integer) session.getAttribute("RomanticCount");
+
+        if (RomanticCount == null) {
+            RomanticCount = 0;
         }
-        
+
+        if (RomanticCount > 0) {
+            RomanticCount--;
+        }
+
+        session.setAttribute("RomanticCount", RomanticCount);
+        response.sendRedirect("Cart.jsp");
+    
+    }
+
     }
 
     /**
@@ -95,9 +95,11 @@ public class ClientServlet extends HttpServlet {
      *
      * @return a String containing servlet description
      */
+/**
     @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
 
 }
+*/

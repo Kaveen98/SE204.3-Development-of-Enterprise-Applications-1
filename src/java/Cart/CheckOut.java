@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Client;
+package Cart;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,12 +14,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author ASUS
  */
-public class ClientServlet extends HttpServlet {
+public class CheckOut extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,10 +39,10 @@ public class ClientServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ClientServlet</title>");            
+            out.println("<title>Servlet CheckOut</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ClientServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet CheckOut at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -74,20 +75,28 @@ public class ClientServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        String username = request.getParameter("username");
-        String contactno = request.getParameter("contactno");
-        String address = request.getParameter("address");
-        String email = request.getParameter("email");
-        String password = request.getParameter("password");
-        
-        Client client = new Client();
-        try {
-            client.addClient(username,contactno,address,email,password);
-            response.sendRedirect("login.jsp");
-        } catch (SQLException ex) {
-            Logger.getLogger(ClientServlet.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
+                    HttpSession session = request.getSession();
+                    Integer TranquilCount = (Integer) session.getAttribute("TranquilCount");
+                    Integer RomanticCount = (Integer) session.getAttribute("RomanticCount");
+                    Integer SoothingCount = (Integer) session.getAttribute("SoothingCount");
+                    Integer EuphoricCount = (Integer) session.getAttribute("EuphoricCount");
+                    Integer EnchantedCount = (Integer) session.getAttribute("EnchantedCount");
+                    Integer MoonlightCount = (Integer) session.getAttribute("MoonlightCount");
+                    Integer DivineCount = (Integer) session.getAttribute("DivineCount");
+                    String user_id = (String) session.getAttribute("user_id");
+                    
+                    Integer Total = (TranquilCount +RomanticCount + SoothingCount + EuphoricCount + EnchantedCount + MoonlightCount + DivineCount)*1139;
+
+                    Order order = new Order();
+                    response.sendRedirect("https://www.whatsapp.com/catalog/94760733387/?app_absent=0");
+            try {
+                order.addOrder(user_id,TranquilCount,RomanticCount,SoothingCount,EuphoricCount,EnchantedCount,
+                        MoonlightCount,DivineCount,Total);
+            } catch (SQLException ex) {
+                Logger.getLogger(CheckOut.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                    
+                    
     }
 
     /**

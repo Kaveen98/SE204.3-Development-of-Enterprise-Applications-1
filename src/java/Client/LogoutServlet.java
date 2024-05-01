@@ -7,9 +7,6 @@ package Client;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author ASUS
  */
-public class ClientServlet extends HttpServlet {
+public class LogoutServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,10 +35,10 @@ public class ClientServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ClientServlet</title>");            
+            out.println("<title>Servlet LogoutServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ClientServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet LogoutServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -74,18 +71,14 @@ public class ClientServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        String username = request.getParameter("username");
-        String contactno = request.getParameter("contactno");
-        String address = request.getParameter("address");
-        String email = request.getParameter("email");
-        String password = request.getParameter("password");
-        
-        Client client = new Client();
-        try {
-            client.addClient(username,contactno,address,email,password);
-            response.sendRedirect("login.jsp");
-        } catch (SQLException ex) {
-            Logger.getLogger(ClientServlet.class.getName()).log(Level.SEVERE, null, ex);
+        try(PrintWriter out = response.getWriter()){
+            if(request.getSession().getAttribute("auth") != null){
+                request.getSession().removeAttribute("auth");
+                response.sendRedirect("login.jsp");
+            } else{
+                response.sendRedirect("index.jsp");
+            }
+            
         }
         
     }

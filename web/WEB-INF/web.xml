@@ -13,12 +13,76 @@
         <servlet-class>Client.ClientServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>CartServlet</servlet-name>
-        <servlet-class>Cart.CartServlet</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>SignupServlet</servlet-name>
         <servlet-class>Client.SignupServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Client.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>Client.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TranquilCountAddServlet</servlet-name>
+        <servlet-class>ClickCount.TranquilCountAddServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TranquilCountRemoveServlet</servlet-name>
+        <servlet-class>ClickCount.TranquilCountRemoveServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RomanticCountAdd</servlet-name>
+        <servlet-class>ClickCount.RomanticCountAdd</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RomanticCountRemove</servlet-name>
+        <servlet-class>ClickCount.RomanticCountRemove</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SoothingCountAddServlet</servlet-name>
+        <servlet-class>ClickCount.SoothingCountAddServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SoothingCountRemoveServlet</servlet-name>
+        <servlet-class>ClickCount.SoothingCountRemoveServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EuphoricCountAdd</servlet-name>
+        <servlet-class>ClickCount.EuphoricCountAdd</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EuphoricCountRemove</servlet-name>
+        <servlet-class>ClickCount.EuphoricCountRemove</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EnchantedCountAddServlet</servlet-name>
+        <servlet-class>ClickCount.EnchantedCountAddServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EnchantedCountRemoveServlet</servlet-name>
+        <servlet-class>ClickCount.EnchantedCountRemoveServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MoonlightCountAdd</servlet-name>
+        <servlet-class>ClickCount.MoonlightCountAdd</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MoonlightCountRemove</servlet-name>
+        <servlet-class>ClickCount.MoonlightCountRemove</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DivineCountAdd</servlet-name>
+        <servlet-class>ClickCount.DivineCountAdd</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DivineCountRemove</servlet-name>
+        <servlet-class>ClickCount.DivineCountRemove</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckOut</servlet-name>
+        <servlet-class>Cart.CheckOut</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>AdminServlet</servlet-name>
@@ -33,12 +97,76 @@
         <url-pattern>/ClientServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>CartServlet</servlet-name>
-        <url-pattern>/CartServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>SignupServlet</servlet-name>
         <url-pattern>/SignupServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TranquilCountAddServlet</servlet-name>
+        <url-pattern>/TranquilCountAddServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TranquilCountRemoveServlet</servlet-name>
+        <url-pattern>/TranquilCountRemoveServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RomanticCountAdd</servlet-name>
+        <url-pattern>/RomanticCountAdd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RomanticCountRemove</servlet-name>
+        <url-pattern>/RomanticCountRemove</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SoothingCountAddServlet</servlet-name>
+        <url-pattern>/SoothingCountAddServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SoothingCountRemoveServlet</servlet-name>
+        <url-pattern>/SoothingCountRemoveServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EuphoricCountAdd</servlet-name>
+        <url-pattern>/EuphoricCountAdd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EuphoricCountRemove</servlet-name>
+        <url-pattern>/EuphoricCountRemove</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EnchantedCountAddServlet</servlet-name>
+        <url-pattern>/EnchantedCountAddServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EnchantedCountRemoveServlet</servlet-name>
+        <url-pattern>/EnchantedCountRemoveServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MoonlightCountAdd</servlet-name>
+        <url-pattern>/MoonlightCountAdd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MoonlightCountRemove</servlet-name>
+        <url-pattern>/MoonlightCountRemove</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DivineCountAdd</servlet-name>
+        <url-pattern>/DivineCountAdd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DivineCountRemove</servlet-name>
+        <url-pattern>/DivineCountRemove</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckOut</servlet-name>
+        <url-pattern>/CheckOut</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
