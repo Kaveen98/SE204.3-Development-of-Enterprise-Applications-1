@@ -32,6 +32,7 @@
 			  <a class="dropdown-item card-img-top" href="divine.jsp">Divine Harmony</a>
               </div>
           </li>
+           <li class="nav-item"> <a class="nav-link card-img-top" href="allproducts.jsp">All products&nbsp;</a> </li>
           <li class="nav-item"> <a class="nav-link card-img-top" href="about.jsp">About Us&nbsp;</a> </li>
 		  <li class="nav-item"> <a class="nav-link card-img-top" href="service.jsp">Service&nbsp;</a> </li>
 		  <li class="nav-item"> <a class="nav-link card-img-top" href="contact.jsp">Contact Us</a> </li>
