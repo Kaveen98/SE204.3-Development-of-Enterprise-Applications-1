@@ -52,7 +52,9 @@
     </nav>
     
   <br>
-  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent">
+  <br>
+  <br>
+  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent;width: 120%; margin-left: -10%;">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
