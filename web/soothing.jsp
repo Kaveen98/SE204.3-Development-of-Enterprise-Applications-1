@@ -62,6 +62,8 @@
 	<p style="font-size: 25px;">A delicate blend of <b>eucalyptus and mint</b>, offering relief from tension and promoting a sense of <b>calm and clarity</b>.</p>
 	<h1 style="font-size: 35px;"><b>LKR 1139.00</b></h1>
 	<a href="https://www.whatsapp.com/catalog/94760733387/?app_absent=0"><button class="button">ADD TO CART</button></a><br><br>
+         <br>
+        <br>
 	<h1 style="font-size: 35px;"><span class="topic"><b>Description</b></span>
 	  <hr class="line"></h1>
 <br>
