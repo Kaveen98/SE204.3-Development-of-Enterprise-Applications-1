@@ -16,7 +16,17 @@
     </head>
 
 <body>
-    
+                <% 
+                    session = request.getSession();
+                    Integer TranquilCount = (Integer) session.getAttribute("TranquilCount");
+                    Integer RomanticCount = (Integer) session.getAttribute("RomanticCount");
+                    Integer SoothingCount = (Integer) session.getAttribute("SoothingCount");
+                    Integer EuphoricCount = (Integer) session.getAttribute("EuphoricCount");
+                    Integer EnchantedCount = (Integer) session.getAttribute("EnchantedCount");
+                    Integer MoonlightCount = (Integer) session.getAttribute("MoonlightCount");
+                    Integer DivineCount = (Integer) session.getAttribute("DivineCount");
+                    String userid = (String) session.getAttribute("userid");
+                 %>
 <div class="container-fluid">
 <div class="container">
     <%@include file ="includes/navbar.jsp" %>
@@ -28,8 +38,8 @@
     <h1 style="font-size: 65px;filter: drop-shadow(8px 10px 7px rgb(0 0 0 / 0.4));"><b>Mystical Moonlight....</b></h1>
 	<br>
 	<p style="font-size: 25px;">A mysterious blend of <b>jasmine and sandalwood</b>, inspired by the magic of moonlit nights and designed to awaken your senses and ignite your<b> imagination</b>.</p>
-	<h1 style="font-size: 35px;"><b>LKR 1139.00</b></h1><form action="MoonlightCountAdd" method="post">
-        <button type="submit" class="button">ADD TO CART</button></form>
+	<h1 style="font-size: 35px;"><b>LKR 1139.00</b></h1><form action="CartServlet" method="post">
+        <button type="submit" class="button" name="moonlight_count_+">ADD TO CART</button></form>
          <br>
         <br>
 	<h1 style="font-size: 35px;"><span class="topic"><b>Description</b></span>

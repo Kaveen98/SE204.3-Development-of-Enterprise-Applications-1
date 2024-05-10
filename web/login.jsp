@@ -16,11 +16,21 @@
     </head>
     
     <body>
-        
+                    <% 
+                    session = request.getSession();
+                    Integer TranquilCount = (Integer) session.getAttribute("TranquilCount");
+                    Integer RomanticCount = (Integer) session.getAttribute("RomanticCount");
+                    Integer SoothingCount = (Integer) session.getAttribute("SoothingCount");
+                    Integer EuphoricCount = (Integer) session.getAttribute("EuphoricCount");
+                    Integer EnchantedCount = (Integer) session.getAttribute("EnchantedCount");
+                    Integer MoonlightCount = (Integer) session.getAttribute("MoonlightCount");
+                    Integer DivineCount = (Integer) session.getAttribute("DivineCount");
+                    String userid = (String) session.getAttribute("userid");
+                 %>
+                 
 <div class="container-fluid">
 <div class="container">
     <%@include file ="includes/navbar.jsp" %>
-    
 	<br>
         <br>
         <br>
@@ -52,7 +62,7 @@
             </table> <br> 
         </form>
               <h1 class="" align="center">ELEVATE YOUR <b>SPACE</b>, ENHANCE YOUR <b>MOOD</b>, AND EMBRACE <b>PURE BLISS...</b></h1>
-    
+                
               <form action="signup.jsp" method="post" name="signup">
                   <h4 align="center">Join with us</h4>
                   <center>  <input type="submit" value="SignUp" /> </center>

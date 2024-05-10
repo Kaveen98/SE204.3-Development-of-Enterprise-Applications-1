@@ -16,7 +16,17 @@
     </head>
 
 <body>
-    
+                <% 
+                    session = request.getSession();
+                    Integer TranquilCount = (Integer) session.getAttribute("TranquilCount");
+                    Integer RomanticCount = (Integer) session.getAttribute("RomanticCount");
+                    Integer SoothingCount = (Integer) session.getAttribute("SoothingCount");
+                    Integer EuphoricCount = (Integer) session.getAttribute("EuphoricCount");
+                    Integer EnchantedCount = (Integer) session.getAttribute("EnchantedCount");
+                    Integer MoonlightCount = (Integer) session.getAttribute("MoonlightCount");
+                    Integer DivineCount = (Integer) session.getAttribute("DivineCount");
+                    String userid = (String) session.getAttribute("userid");
+                 %>
 <div class="container-fluid">
 <div class="container">
     <%@include file ="includes/navbar.jsp" %>
@@ -28,8 +38,8 @@
     <h1 style="font-size: 65px;filter: drop-shadow(8px 10px 7px rgb(0 0 0 / 0.4));"><b>Tranquil Oasis....</b></h1>
 	<br>
 	<p style="font-size: 25px;">A calming blend of <b>lavender and chamomile</b> essential oils, perfect for unwinding after a hectic day and promoting <b>relaxation and tranquillity</b>.</p>
-        <h1 style="font-size: 35px;"><b>LKR 1139.00</b></h1><form action="TranquilCountAddServlet" method="post">
-        <button type="submit" class="button">ADD TO CART</button></form>
+        <h1 style="font-size: 35px;"><b>LKR 1139.00</b></h1><form action="CartServlet" method="post">
+        <button type="submit" class="button" name="tranquil_count_+">ADD TO CART</button></form>
         <br>
         <br>
 	<h1 style="font-size: 35px;"><span class="topic"><b>Description</b></span>
@@ -47,7 +57,7 @@
 <h1 style="font-size: 25px;"><b>Ingredients</b></h1>
  <ul style="font-size: 19px;">
  <li>Our candles are meticulously hand-poured using locally sourced premium paraffin wax, guaranteeing a clean and enduring burn.</li>
- <li>With 100% cotton core wicks and exquisite fine fragrance oils and essential oils, each candle offers an unparalleled sensory journey. Plus, our reusable tin conterner add extra value to your investment in luxury ambiance.</li>
+ <li>With 100% cotton core wicks and exquisite fine fragrance oils and essential oils, each candle offers an unparalleled sensory journey. Plus, our reusable tin container add extra value to your investment in luxury ambiance.</li>
 </ul>
 <br>
   <h1 style="font-size: 25px;"><b>Rituals</b></h1>

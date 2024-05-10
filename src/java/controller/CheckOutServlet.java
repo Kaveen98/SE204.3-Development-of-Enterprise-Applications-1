@@ -3,25 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Cart;
+package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import model.Order;
 
 /**
  *
  * @author ASUS
  */
-public class CheckOut extends HttpServlet {
+public class CheckOutServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -40,10 +40,10 @@ public class CheckOut extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet CheckOut</title>");            
+            out.println("<title>Servlet CheckOutServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet CheckOut at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet CheckOutServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -77,7 +77,6 @@ public class CheckOut extends HttpServlet {
             throws ServletException, IOException {
         
                     HttpSession session = request.getSession();
-                    // Retrieve session attributes
                     Integer TranquilCount = (Integer) session.getAttribute("TranquilCount");
                     Integer RomanticCount = (Integer) session.getAttribute("RomanticCount");
                     Integer SoothingCount = (Integer) session.getAttribute("SoothingCount");
@@ -85,47 +84,34 @@ public class CheckOut extends HttpServlet {
                     Integer EnchantedCount = (Integer) session.getAttribute("EnchantedCount");
                     Integer MoonlightCount = (Integer) session.getAttribute("MoonlightCount");
                     Integer DivineCount = (Integer) session.getAttribute("DivineCount");
-                    String userid = (String) session.getAttribute("userid");
+                    Integer userid = Integer.parseInt(String.valueOf(session.getAttribute("userid")));
                     
-                    
-                    
-    // Perform null checks and calculate Total
-    int Total = 0;
-    if (TranquilCount != null) Total += TranquilCount;
-    if (RomanticCount != null) Total += RomanticCount;
-    if (SoothingCount != null) Total += SoothingCount;
-    if (EuphoricCount != null) Total += EuphoricCount;
-    if (EnchantedCount != null) Total += EnchantedCount;
-    if (MoonlightCount != null) Total += MoonlightCount;
-    if (DivineCount != null) Total += DivineCount;
-    Total *= 1139;
+                    // Assign default value of 0 if any of the session attributes are null
+                    TranquilCount = TranquilCount == null ? 0 : TranquilCount;
+                    RomanticCount = RomanticCount == null ? 0 : RomanticCount;
+                    SoothingCount = SoothingCount == null ? 0 : SoothingCount;
+                    EuphoricCount = EuphoricCount == null ? 0 : EuphoricCount;
+                    EnchantedCount = EnchantedCount == null ? 0 : EnchantedCount;
+                    MoonlightCount = MoonlightCount == null ? 0 : MoonlightCount;
+                    DivineCount = DivineCount == null ? 0 : DivineCount;
+                    userid = userid == null ? 0 : userid;
 
-    // Perform database operations
-    try {
-        Order order = new Order();
-        order.addOrder(userid, TranquilCount, RomanticCount, SoothingCount, EuphoricCount,
-                EnchantedCount, MoonlightCount, DivineCount, Total);
-    } catch (SQLException ex) {
-        Logger.getLogger(CheckOut.class.getName()).log(Level.SEVERE, null, ex);
-        // Handle database error
-        request.setAttribute("error", "Database error occurred.");
-        RequestDispatcher dispatcher = request.getRequestDispatcher("error.jsp");
-        dispatcher.forward(request, response);
-        return;
+
+                    
+                    Integer Total = (TranquilCount +RomanticCount + SoothingCount + EuphoricCount + EnchantedCount + MoonlightCount + DivineCount)*1139;
+                    
+                    Order order = new Order();
+                        try {
+                            order.addOrder(userid, TranquilCount, RomanticCount, SoothingCount, EuphoricCount, EnchantedCount, MoonlightCount, DivineCount, Total);
+                        } catch (SQLException ex) {
+                            Logger.getLogger(CheckOutServlet.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        
+                            // Redirect the user to the WhatsApp catalog link
+                        response.sendRedirect("https://www.whatsapp.com/catalog/94760733387/?app_absent=0");
+        }
     }
 
-    // Redirect the user to the WhatsApp catalog link
-    response.sendRedirect("https://www.whatsapp.com/catalog/94760733387/?app_absent=0");
-    }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
 
-}
+

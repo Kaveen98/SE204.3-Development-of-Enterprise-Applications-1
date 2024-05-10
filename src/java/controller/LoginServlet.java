@@ -3,10 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ClickCount;
+package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +25,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author ASUS
  */
-public class SoothingCountAddServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,10 +44,10 @@ public class SoothingCountAddServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet SoothingCountAddServlet</title>");            
+            out.println("<title>Servlet LoginServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet SoothingCountAddServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet LoginServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -57,7 +65,7 @@ public class SoothingCountAddServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
     }
 
     /**
@@ -71,19 +79,46 @@ public class SoothingCountAddServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        String driver = "com.mysql.jdbc.Driver";
+        String url = "jdbc:mysql://localhost:3306/arcana_candles";
+        String query = "SELECT * FROM user WHERE username=? AND password=?";
         
-           HttpSession session = request.getSession();
-           Integer SoothingCount = (Integer) session.getAttribute("SoothingCount");
-
-        if (SoothingCount == null) {
-            SoothingCount = 0;
+        
+        try {
+            Class.forName(driver);
+            Connection con = DriverManager.getConnection(url,"root","");
+            
+            PreparedStatement statement = con.prepareStatement(query);
+            statement.setString(1, username);
+            statement.setString(2, password);
+            
+            ResultSet result = statement.executeQuery();
+        
+        if (result.next()) {
+            // Valid username and password
+            HttpSession session = request.getSession();
+            String userid = result.getString("userid"); // Get userid from result
+            session.setAttribute("userid", userid);
+            response.sendRedirect("index.jsp");
+            
+        } else {
+            // Invalid username or password
+            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+            request.setAttribute("error", "Invalid username or password");
+            dispatcher.forward(request, response);
         }
         
-        SoothingCount++;
-        session.setAttribute("SoothingCount", SoothingCount);
-        response.sendRedirect("Cart.jsp");  
-    
-        
+            result.close();
+            statement.close();
+            con.close();
+            
+            }catch (SQLException ex) {
+                Logger.getLogger(controller.LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(controller.LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
+            }    
     }
 
     /**

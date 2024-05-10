@@ -41,6 +41,7 @@
                     Integer EnchantedCount = (Integer) session.getAttribute("EnchantedCount");
                     Integer MoonlightCount = (Integer) session.getAttribute("MoonlightCount");
                     Integer DivineCount = (Integer) session.getAttribute("DivineCount");
+                    String userid = (String) session.getAttribute("userid");
                     %>
                     <%! Integer Total = null; %>
             <table border="1">
@@ -54,6 +55,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <form action="CartServlet" method="POST">
                     <tr>
                         <td>Tranquil Oasis</td>
                         <td>LKR.1139.00</td>
@@ -65,16 +67,13 @@
                             %>
                             <h6><%= TranquilCount %></h6>
                         </td>
-                        <td><form name="tranquil_count+" action="TranquilCountAddServlet" method="POST">
+                        <td>
                                 <input type="submit" value="Add" name="tranquil_count_+" style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                         <td>
-                            <form name="tranquil_count-" action="TranquilCountRemoveServlet" method="POST">
                                 <input type="submit" value="Remove" name="tranquil_count_-"style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                     </tr>
                     <tr>
@@ -88,16 +87,13 @@
                             %>
                             <h6><%= RomanticCount %></h6>
                         </td>
-                        <td><form name="romantic_count+" action="RomanticCountAdd" method="POST">
+                        <td>
                                 <input type="submit" value="Add" name="romantic_count_+" style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                         <td>
-                            <form name="romantic_count-" action="RomanticCountRemove" method="POST">
                                 <input type="submit" value="Remove" name="romantic_count_-"style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                     </tr>
                     <tr>
@@ -111,16 +107,13 @@
                             %>
                             <h6><%= SoothingCount %></h6>
                         </td>
-                        <td><form name="soothing_count+" action="SoothingCountAddServlet" method="POST">
+                        <td>
                                 <input type="submit" value="Add" name="soothing_count_+" style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                         <td>
-                            <form name="soothing_count-" action="SoothingCountRemoveServlet" method="POST">
                                 <input type="submit" value="Remove" name="soothing_count_-"style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                     </tr>
                     <tr>
@@ -134,16 +127,13 @@
                             %>
                             <h6><%= EuphoricCount %></h6>
                         </td>
-                        <td><form name="euphoric_count+" action="EuphoricCountAdd" method="POST">
+                        <td>
                                 <input type="submit" value="Add" name="euphoric_count_+" style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                         <td>
-                            <form name="euphoric_count-" action="EuphoricCountRemove" method="POST">
                                 <input type="submit" value="Remove" name="euphoric_count_-"style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                     </tr>
                     <tr>
@@ -157,16 +147,13 @@
                             %>
                             <h6><%= EnchantedCount %></h6>
                         </td>
-                        <td><form name="enchanted_count+" action="EnchantedCountAddServlet" method="POST">
+                        <td>
                                 <input type="submit" value="Add" name="enchanted_count_+" style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                         <td>
-                            <form name="enchanted_count-" action="EnchantedCountRemoveServlet" method="POST">
                                 <input type="submit" value="Remove" name="enchanted_count_-"style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                     </tr>
                     <tr>
@@ -180,16 +167,13 @@
                             %>
                             <h6><%= MoonlightCount %></h6>
                         </td>
-                        <td><form name="moonlight_count+" action="MoonlightCountAdd" method="POST">
+                        <td>
                                 <input type="submit" value="Add" name="moonlight_count_+" style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                         <td>
-                            <form name="moonlight_count-" action="MoonlightCountRemove" method="POST">
                                 <input type="submit" value="Remove" name="moonlight_count_-"style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                     </tr>
                     <tr>
@@ -203,18 +187,16 @@
                             %>
                             <h6><%= DivineCount %></h6>
                         </td>
-                        <td><form name="divine_count+" action="DivineCountAdd" method="POST">
+                        <td>
                                 <input type="submit" value="Add" name="divine_count_+" style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                         <td>
-                            <form name="divine_count-" action="DivineCountRemove" method="POST">
                                 <input type="submit" value="Remove" name="divine_count_-"style="border:1px solid black;
                                        background-color: transparent; color: black"/>
-                            </form>
                         </td>
                     </tr>
+                           </form>
                     <tr>
                         <td></td>
                         <td></td>
@@ -225,7 +207,7 @@
                     <tr>
                         <td></td>
                         <td>
-                            <form name="checkout" action="CheckOut" method="POST">
+                            <form name="checkout" action="CheckOutServlet" method="POST">
                                 <input type="submit" value="Check-Out" name="checkoutsub"/>
                             </form>
                         </td>

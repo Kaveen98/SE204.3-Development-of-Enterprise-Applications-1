@@ -9,7 +9,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Login</title>
+        <title>Admin Dashboard</title>
         <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet">
         <link href="images/favicon.ico" rel="shortcut icon">
@@ -38,29 +38,25 @@
   <br>
   
  
-  <h1 style="font-size: 30px;"><span class="topic">Admin Login</span>
+  <h1 style="font-size: 30px;"><span class="topic">Admin Dashboard</span>
     <hr class="line"></h1>
   <br><br>
         <div class="container">
             <center>
-                <form name="adminlog" action="AdminServlet" method="POST">
-                    <table border="1" cellspacing="1" cellpadding="1">
-                        <tbody>
-                            <tr>
-                                <td>Username: </td>
-                                <td><input type="text" name="admin_name" value="" /></td>
-                            </tr>
-                            <tr>
-                                <td>Password:</td>
-                                <td><input type="password" name="admin_password" value="" /></td>
-                            </tr>
-                            <tr>
-                                <td><input type="submit" value="Login" /></td>
-                                <td><input type="reset" value="Clear" /></td>
-                            </tr>
-                        </tbody>
-                    </table>  
-                </form>
+                <table border="0" cellspacing="25" cellpadding="25">
+                    <tbody>
+                        <tr>
+                            <td><form action="ViewUserServlet" method="GET"><input type="submit" value="View All Users" /></form>
+                                <br><br><br><br><br>
+                                <form action="ViewOrdersServlet" method="GET"><input type="submit" value="View All Orders" /></form>
+                            </td>
+                            <td></td><td></td><td></td><td></td>
+                            <td><img src="images/Brown And Gold Vibrant Happy Diwali Facebook Post (1).png" width="470" height="333"/>
+                            </td>
+                        </tr> 
+                    </tbody>
+                </table>
+
             </center>
                 
 			

@@ -16,7 +16,17 @@
     </head>
 
 <body>
-    
+                <% 
+                    session = request.getSession();
+                    Integer TranquilCount = (Integer) session.getAttribute("TranquilCount");
+                    Integer RomanticCount = (Integer) session.getAttribute("RomanticCount");
+                    Integer SoothingCount = (Integer) session.getAttribute("SoothingCount");
+                    Integer EuphoricCount = (Integer) session.getAttribute("EuphoricCount");
+                    Integer EnchantedCount = (Integer) session.getAttribute("EnchantedCount");
+                    Integer MoonlightCount = (Integer) session.getAttribute("MoonlightCount");
+                    Integer DivineCount = (Integer) session.getAttribute("DivineCount");
+                    String userid = (String) session.getAttribute("userid");
+                 %>
 <div class="container-fluid">
 <div class="container">
     <%@include file ="includes/navbar.jsp" %>

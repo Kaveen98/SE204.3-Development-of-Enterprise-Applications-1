@@ -28,21 +28,21 @@
 		  <li class="nav-item"> <a class="nav-link card-img-top" href="contact.jsp">Contact Us</a> </li>
 
                   
-                  <% if(session.getAttribute("userid") == null) {%>
+                  <% if(session.getAttribute("admin_id") == null) {%>
                   <p>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </p>
                     <li class="nav-item">
-                        <button class="navbar-button" onclick="location.href='login.jsp';">Login / Register</button>
+                        <button class="navbar-button" onclick="location.href='adminlogin.jsp';">Admin Login</button>
                     </li>
                 <% }else {%>
-                    <li class="nav-item"> <a class="nav-link card-img-top" href="Cart.jsp">Shopping Cart</a> </li>
                     <p>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </p>
                     <li class="nav-item">
-                        <button class="navbar-button" onclick="location.href='logout.jsp';">Logout</button>
+                        <button class="navbar-button" onclick="location.href='adminlogout.jsp';">Admin Logout</button>
                     </li>
                     
                 <% }%>
