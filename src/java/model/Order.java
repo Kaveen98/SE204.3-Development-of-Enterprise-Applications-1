@@ -168,5 +168,5 @@ public class Order {
         this.DivineCount = DivineCount;
         this.Total = Total;
     }
- 
 }
+
